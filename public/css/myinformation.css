@@ -1,0 +1,71 @@
+.myInfo{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f5f5fa;
+    border-radius: 1rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    background-color: #ffffff;
+}
+.myInfo .header-myInfo .h2{
+    height: 35px;
+    font-family: 'lb';
+    margin-left: 5px;
+    font-size: 2.4rem;
+}
+.myInfo hr{
+    margin-top: 5px;
+    opacity: 0.1;
+    margin-right: 3rem;
+    height: 2px;
+}
+.notify-my {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+.notifyMy-list .notifyMy-item{
+    display: flex;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.notifyMy-list .notifyMy-item:hover{
+    border-radius: 1rem;
+    background-color: #f5f5fa;
+}
+.notifyMy-list .notifyMy-item .notify-icon{
+    width: 7.7rem;
+    height: 7.7rem;
+    background-color: #e7f2f9;
+    border-radius: 50%;
+    
+}
+.notifyMy-list .notifyMy-item .notify-detail{
+    width: 80%;
+    margin-left: 2rem;
+    line-height: 2.5rem;
+}
+.notifyMy-item .notify-detail .assess{
+    font-family: 'lb';
+    color: #0578c4;
+    padding-bottom: 2px;
+    font-size: 1.8rem;
+}
+.notify-detail .notify-infoOrder b{
+    color: #000000;
+    font-weight: 600;
+}
+.notify-detail .notify-infoOrder{
+    font-size: 1.6rem;
+    color: #000000;
+}
+.notify-icon .notify-icon-notify{
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+    margin-left: 16px;
+}

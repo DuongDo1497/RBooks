@@ -1,0 +1,218 @@
+#modalLogin .modal-dialog{
+  max-width: initial;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
+#modalLogin .modal-content{
+  max-width: 50rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 2rem;
+    outline: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 20%);
+  }
+  .text-danger-register {
+    color: #0398fb;
+    float: right;
+    padding: 0 1rem;
+    
+  }
+  .text-danger-register:hover {
+    color: #0398fb;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+  }
+  
+  #modalLogin .form-group-email-password{
+    border-radius: 20rem;
+    font-family: 'ln';
+    padding: 0 0.8rem 1rem;
+  }
+  .text-forgotpassword{
+    color: #757676;
+    padding: 0 0 0 10rem;
+    font-family: 'l5';
+  }
+  .modal-header-login .form-horizontal {
+    padding: 5rem;
+  }
+  .form-login{
+    padding: 0rem 22rem 0 0;
+    font-family: 'lb';
+  }
+  .modal-header-login {
+    font-size: 15px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+  #modalLogin .form-control {
+    display: block;
+    width: 100%;
+    padding: 1rem 4rem 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 2rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .form-message-email-password {
+    color: #fb5153;
+    font-family: 'l5';
+    padding: 1rem 0 0 2rem;
+  }
+
+  .fa-facebook{
+    color: #1877f2;
+    font-size: 5rem;
+    padding: 1rem
+  }
+  .fa-google-plus{
+    color: #dc4e41;
+    font-size: 5rem;
+    padding: 1rem
+  }
+  .modal-footerLogin{
+    text-align:center;
+    padding-top: 2.5rem!important;
+  }
+  .modal-footerLogin .seperator {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    margin-right: 42px;
+    height: 16px;
+  }
+  .seperator b {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    top: -22px;
+    z-index: 1;
+    font-family: 'l5';
+  }
+  .seperator{       
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .form-group-email-password{
+    position: relative;
+  }
+  .form-group-email-password input{
+    font-size: 18px;
+    outline: none;
+    border-radius: 20px;
+    font-family: 'l5';
+  }
+  .form-group-email-password input::placeholder{
+    font-size: 17px;
+  }
+  .form-group-email-password span i.hide-btn1::before{
+    content: "\f070";
+  }
+  #modalLogin .form-group-email-password{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group-email-password.invalid .form-message-email-password {
+    color: #fb5153;
+    font-family: 'l5';
+    padding: 1rem 0 0 2rem;
+  }
+  .absolute-password {
+    position: absolute;
+    justify-content: right;
+    font-size: 1.5rem;
+    align-items: center;
+    left: 36rem;
+    transform: translateY(100%);
+    color: #7d858c;
+  }
+.text-danger-Forgotpassword {
+    color: #6c757d;
+    padding: 0 1rem;
+}
+.text-danger-Forgotpassword:hover{
+    color: #6c757d;
+}
+.btn-close-login button{
+  background-color: #fff!important;
+}
+.btn-close-login{width: 36px;
+  height: 36px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  font-size: 22px;
+  color: #a3a1a1;
+  background-color: #fff;
+}
+.btn-close-login:hover{
+  background-color: rgb(233, 233, 233);
+}
+.d-flex.justify-content-between.align-items-center {
+  padding: 0 0 3rem;
+}
+.form-group.row.p-9 {
+  padding: 0 1rem 2rem;
+}
+.btn-login:hover {
+  color: #ffffff;
+  background-color: #0578c4;
+}
+#formLogin .btn-login {
+  background-color: #0398fb;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 20px;
+  width: 100%;
+  font-family: 'l5';
+}
+.form-message-email-password {
+  color: #fb5153;
+  font-family: 'l5';
+  padding: 1rem 0 0 2rem;
+}
+#btnLogin:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+}

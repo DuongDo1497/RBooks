@@ -1,0 +1,115 @@
+.order-info hr{
+    margin-top: 0;
+}
+.order-info .manage-order span{
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: 'lb';
+    color: #000000;
+}
+.order-info .pb-1 {
+    padding-bottom: 1rem!important;
+    padding-top: 2rem!important;
+    padding-left: 3rem!important;
+}
+.order-info .table-striped {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.order-info .table-thead{
+    line-height: 5rem;
+    background: #ebebeb;
+    width: 100%;
+}
+.order-info .table-thead tr th {
+    height: 26px;
+    width: 102px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'l5';
+}
+
+.order-info table .table-body{
+    text-align: center;
+}
+.order-info table .table-body tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    font-family: 'ln';
+}
+
+.order-info .table.table-striped tbody tr:nth-of-type(odd) * {
+    background-color: #fff; 
+    --bs-table-accent-bg: #fff;
+    color: #000000;
+}
+.order-info .table-striped>:not(:first-child) {
+    border-top: 2px solid transparent; 
+}
+.order-info .table-tbody tr{
+    border-bottom: none;
+}
+.order-info .table-body {
+    border: 1px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  .order-info .table-striped  th:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: right;
+    padding-right: 3rem;    
+}
+.order-info .table-striped  th:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+}
+.order-info .table-striped th:nth-child(3){
+    text-align: left;
+}
+.order-info .table-body .alert-info{
+    color: rgb(170, 16, 144) !important;
+    font-weight: 300;
+    padding-right: 1.5rem;
+    font-family: 'ln';
+}
+.order-info .table-body .alert-warning{
+    color:rgb(55, 8, 109);
+    font-weight: 300;
+    background-color: #fff;
+    padding-right: 1.5rem;
+    font-family: 'ln';
+}
+.order-info .table-body .alert-success{
+    color: #0ec74b !important;
+    font-weight: 300;
+    padding-right: 1.5rem;
+    font-family: 'ln';
+}
+.order-info .table-body .alert-danger{
+    color: #da3908;
+    font-weight: 300;
+    background-color: #fff;
+    padding-right: 1.5rem;
+    font-family: 'ln';
+}
+.order-info .table-striped>:not(caption)>*>* {
+    padding: 0 0;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+.order-info .table-striped .table-body tr td {
+    line-height:20px;
+    padding-top: 18px;
+    padding-bottom: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.order-info .table-body .text-primary{
+    font-family: 'l5';
+}

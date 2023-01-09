@@ -1,0 +1,40 @@
+.modal-content-forgotPassword {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.modal-body-forgotPassword {
+    text-align: center;
+}
+.form-group-forgotPassword .form-control-email {
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    background-color: #f5f5fa;
+    border-radius: 1rem;
+    margin: 1rem 0 3rem 0;
+    width: 100%;
+}
+.float-right-forgotPassword {
+    text-align: center;
+}
+.float-right-forgotPassword .btn-modal{
+    background-color: #fb5153;
+    border-color: #fb5153;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#forgotPassword .modal-content-forgot-password{
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    outline: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+}
+.float-right-forgotPassword .btn-modal:hover {
+    background-color: #bb2d3b;
+}

@@ -1,0 +1,93 @@
+#cart-container{
+    background-color: #f5f5fa;
+    padding: 2rem 0;
+}
+.cart-container-body{
+    background-color: #fff;
+    border-radius: 2rem;
+}
+#cart-container .checkout-header{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+}
+#cart-container .checkout-header img{
+    max-width: calc(33.2rem);
+    margin-left: 33%;
+    /* margin: 0 auto; */
+}
+#cart-container .checkout-header h2{
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 3rem 0;
+}
+#cart-container .checkout-header p{
+    /* font-size: 5rem; */
+    
+    font-size: 1.8rem;
+    
+    margin-bottom: 3rem;
+}
+#cart-container .checkout-header a{
+    color: #000;
+    font-weight: bold;
+}
+#cart-container .checkout-done-body .checkout-body{
+    background-color: #fe7a0d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    color: #fff;
+    padding: 3rem 0;
+    border-radius: 2rem;
+}
+#cart-container .checkout-done-body {
+    display: flex;
+    justify-content: center;
+}
+.checkout-done-body .checkout-body p{
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+.checkout-done-body .checkout-body .id-done-order{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.checkout-done-body .btn-check-done{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.checkout-done-body .btn-check-done .btn-order-tracking,
+.checkout-done-body .btn-check-done .btn-order-continue{
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+    background-color: #e7f2f9;
+    color: #0578c4;
+    border: 0.1rem solid #0578c4;
+    border-radius: 1rem ;
+}
+.checkout-done-body .btn-check-done .btn-order-tracking{
+    margin-right: 1rem ;
+}
+.checkout-done-body .btn-check-done .btn-order-continue{
+    margin-left: 1rem ;
+}
+.checkout-done-body .check-done-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+}
+.checkout-done-body .check-done-footer p{
+    padding: 1rem 0;
+}
+.checkout-done-body .check-done-footer .payment-information,
+.checkout-done-body .check-done-footer a
+{
+    color: #0578c4;
+}

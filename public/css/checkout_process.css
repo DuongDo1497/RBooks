@@ -1,0 +1,208 @@
+#address-container{
+    background-color: #f5f5fa;
+}
+.container-process{
+    padding: 4rem 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+.container-process hr{
+    margin-bottom: 2rem;
+    color: #0578c4;
+    height: 0.2rem;
+}
+.checkout-icon-process{
+    font-size: 3rem;
+    color: #0578c4;
+    margin-right: 1rem;
+}
+.content-gift{
+    display: none;
+}
+.fz-title-process{
+    font-size: 2.4rem;
+}
+.custom-radio{
+    padding: 0.5rem 0;
+}
+.custom-control-label{
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+.vat-default, .gift-default{
+    margin:2rem 0;
+    border: 0.1rem solid #0578c4;
+    padding: 3rem 3rem 2rem 3rem;
+    border-radius: 2rem;
+    
+}
+.vat_method label, .gift_method label{
+    color: #0578c4;
+}
+.input-checkout{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.label-input-process{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.gift-default .des-gift{
+    padding: 2rem 0;
+    color: #fb5153;
+    font-size: 1.4rem;
+}
+.label-process__reciever{
+    padding-left: 3rem;
+}
+.label-gift-info{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+.gift-message textarea{
+    min-height: 10rem;
+}
+.process-address .process-address-title{
+    color: #a4a6a8;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.process-address hr{
+    margin-top: 0;
+    color: #a4a6a8;
+}
+.process-address .customer-name-phone{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.process-address .customer-name-phone .customer-name{
+    font-size: 1.8rem;
+}
+
+.process-address .customer-name-phone .customer-phone{
+    font-size: 1.6rem;
+    color: #1a93e8;
+}
+
+.process-address .customer-name-phone .vertical-line {
+    border-left: 1px solid #d7d7d7;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+.process-address .customer-address{
+    color: #bdbebe;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.total_cart{
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    padding: 2rem 1rem 2rem 2rem;
+}
+.total_cart--info{
+    border-radius: 4rem 0.5rem 4rem 0.5rem;
+}
+.process-address-title button{
+    font-size: 1.8rem;
+    color: #1a93e8;
+}
+.process-price{
+    border-radius: 2rem;
+    border: 0.1rem solid #fb5153;
+}
+.product-price .product-price-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.product-price hr{
+    color: #a4a6a8;
+}
+.process-price li{
+    display: flex;
+    padding: 1.5rem 0;
+    border-bottom: 0.1rem dashed #a4a6a8;
+}
+
+.process-price li div:first-child{
+    color: #a4a6a8;
+    font-size: 1.8rem;
+}
+.process-price li div:last-child{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.8rem!important;
+}
+.process-price li:last-child{
+    padding-bottom: 0;
+}
+.price_sell--total{
+    color: #0578c4;
+    font-size: 2rem;
+}
+.btn-process-checkout{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-process-checkout .btn-process-continue,
+.btn-process-checkout .btn-process-buynow{
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+}
+.btn-process-checkout .btn-process-continue{
+    border: 0.1rem solid #fb5153;
+    border-radius: 4rem;
+    font-weight: bold;
+}
+.btn-process-checkout .btn-process-buynow{
+    border: 0.1rem solid #fb5153;
+    border-radius: 4rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #fb5153;
+}
+.btn-process-checkout .btn-process-buynow:hover{
+    opacity: .6;
+}
+.process-discount{
+    background-color: #fff;
+    padding: 3rem ;
+    margin-top: 5rem;
+    border: 0.1rem dashed #ea5c1d;
+    border-radius: 3rem;
+}
+.process-discount-title{
+    color: #e12016;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.input-coupon-process{
+    background-color: #edebeb;
+    font-size: 1.6rem;
+    border-radius: 1rem!important;
+    margin-right: 1rem;
+    padding: 0.5rem 2rem;
+}
+.btn-coupon-process{
+    background-color: #fb5153;
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    border-radius: 1rem!important;
+    z-index: 1!important;
+}
+.btn-coupon-process:hover{
+    opacity: .6;
+    color: #fff;
+}
+.input-group-discount{
+    margin-bottom: -1rem;
+}

@@ -1,0 +1,333 @@
+.manager-address .card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.manager-address td,
+.manager-address th
+{
+    padding-top: 1.5rem;
+}
+.btn.new-address{
+    background-color: #f34248;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+}
+.profile-address {
+    padding: 1rem;
+}
+.address-form {
+    background-color: #f5f5fa;
+    padding: 2rem 5rem 2rem 0;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.address-form:last-child{
+    margin-bottom: 0;
+}
+.badge.badge-primary {
+    display: inline-block;
+    font-family: "lb";
+    font-size: 1.8rem;
+    background-color: #d9f2d9;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    margin-left: 2rem;
+    color: #009900;
+}
+.address-form th {
+    text-align: right;
+    padding: 1rem 3rem 1rem 0;
+    opacity: 50%;
+}
+.editaddress {
+    color: #0578c4;
+}
+.modal-editaddress {
+    padding: 4rem;
+}
+.modal-addaddress {
+    padding: 4rem;
+}
+.text-name {
+    position: relative;
+ }
+ 
+ .text-name label {
+    position: absolute;
+    left: 1rem;
+    background-color: #ffffff;
+    padding: 1px 5px;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    color: #adb3b6;
+ }
+ 
+ .text-name input {
+    padding: 1rem;
+    width: 98%;
+    border: 1px solid #ced4da;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: black;
+}
+.form-group-editaddress {
+    padding: 2rem 0 0 0;
+    width: 50%;
+}
+.text-phone {
+    position: relative;
+ }
+ 
+ .text-phone label {
+    position: absolute;
+    left: 1rem;
+    background-color: #ffffff;
+    padding: 1px 5px;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    color: #adb3b6;
+    margin-left: 0.5rem;
+ }
+ 
+ .text-phone input {
+    padding: 1rem;
+    width: 98%;
+    border: 1px solid #ced4da;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: black;
+    margin-left: 0.5rem;
+}
+.form-group-phone {
+    padding: 2rem 0 0 0;
+    width: 50%;
+}
+.form-group-edit {
+    display: flex;
+}
+.text-address {
+    position: relative;
+ }
+ 
+ .text-address label {
+    position: absolute;
+    margin-left: 1rem;
+    background-color: #ffffff;
+    padding: 1px 5px;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    color: #adb3b6;
+ }
+.form-group-address {
+    padding: 3rem 0 0 0;
+}
+.text-specifically {
+    position: relative;
+ }
+ 
+ .text-specifically label {
+    position: absolute;
+    left: 1rem;
+    background-color: #ffffff;
+    padding: 1px 5px;
+    font-size: 1.5rem;
+    transform: translateY(-50%);
+    color: #adb3b6;
+ }
+ 
+ .text-specifically input {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: black;
+}
+.form-group-specifically {
+    padding: 7rem 0 0 0;
+}
+.float-default {
+    padding: 2rem 0;
+}
+.btn-backsave .btn-back {
+    background-color: #fff;
+    padding: 1rem;
+}
+.btn-backsave .btn-save {
+    background-color: #de3b41;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+.btn-backsave {
+    text-align: center;
+}
+.office-editaddress {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    border: 0.5px solid #d7d7d7;
+}
+.home-editaddress {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    border: 0.5px solid #d7d7d7;
+    margin-right: 1rem;
+}
+.btn-homeofficeeditaddress{
+    color: #0578c4;
+    border: 1px solid #0578c4;
+}
+.office-address {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    border: 0.5px solid #d7d7d7;
+}
+.home-address {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    border: 0.5px solid #d7d7d7;
+    margin-right: 1rem;
+}
+.btn-homeofficeaddress{
+    color: #0578c4;
+    border: 1px solid #0578c4;
+}
+label {
+    padding: 0.7rem;
+}
+.address-form .btn-edit{
+    font-size: 1.8rem;
+    color: #0478c5;
+    text-decoration: none;
+    padding: 1rem 0;
+    float: right;
+}
+.address-form .btn-edit__notdefault{
+    margin-top: -1rem;
+}
+.address-form .btn-edit__notdefault a:last-child{
+    color: #bab9b9;
+    margin-left: 1rem;
+}
+.address-form .btn-edit a{
+    color: #0478c5;
+}
+.address-form .btn-set-default{
+    float: right;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: -1rem;
+}
+.address-form .btn-set-default__enabled{
+    color: #009900;
+    border: 0.1rem solid #c9efc9;
+    background-color: #fff;
+}
+.address-form .btn-set-default__disabled{
+    color: #bab9b9;
+    border: 0.1rem solid #bab9b9;
+}
+.form-group-district {
+    width: 32%;
+    float: left;
+    margin: 0 1rem;
+}
+.form-group-wards {
+    width: 32%;
+    float: right;
+}
+.form-group-city {
+    width: 32%;
+    float: left;
+}
+#modalAddAddress .modal-dialog {
+    max-width: initial;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+#modalAddAddress .modal-content {
+    max-width: 60rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+#modalEditAddress .modal-dialog {
+    max-width: initial;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+#modalEditAddress .modal-content {
+    max-width: 60rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+#modalDeleteAddress .modal-dialog{
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    width: 100%;
+}
+#modalDeleteAddress .modal-content {
+    width: 75%;
+}
+#modalDeleteAddress .modal-header,
+#modalDeleteAddress .modal-footer{
+    border: none;
+}
+#modalDeleteAddress .modal-footer,
+#modalDeleteAddress .modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+#modalDeleteAddress .modal-body{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'lb';
+    padding: 0;
+    margin-top: 2rem;
+}
+#modalDeleteAddress .modal-footer{
+    margin:3rem 0;
+    padding: 0;
+}
+#modalDeleteAddress .modal-footer button {
+    font-size: 2rem;
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+}
+#modalDeleteAddress .modal-footer button:first-child{
+    /* margin-right: 1rem ; */
+}
+#modalDeleteAddress .modal-footer button:last-child{
+    /* margin-left: 1rem ; */
+    background-color: #f34248;
+    color: #fff;
+}
+#modalDeleteAddress .modal-footer button:last-child:hover{
+    background-color: #de3b41;
+}
+
+.text-address select {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: black;
+}

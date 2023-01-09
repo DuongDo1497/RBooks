@@ -1,0 +1,311 @@
+.recruitment{
+    padding: 5rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+}
+.recruitment-main{
+    background-color: #f5f5fa;
+    padding: 2rem;
+}
+.recruitment-main .table-bordered {
+    background-color: #eef8fe;
+}
+.table-recruitment {
+    font-size:18px; 
+    text-align: center;
+}
+.table-recruitment thead th { 
+    background-color:#eef8fe;
+    color:#0578c4;
+    padding:2.5rem;
+    border: 2px solid #ffffff;
+    font-family: 'lb'
+}
+.table-recruitment thead th:first-child{
+    border-radius: 2rem 0 0 0;
+}
+.table-recruitment thead th:last-child{
+    border-radius: 0 2rem 0 0;
+}
+.table-recruitment tbody td {
+    padding:1.5rem;
+    border: 2px solid #ffffff;
+}
+.table-recruitment tbody tr:last-child td:first-child{
+    border-radius: 0 0 0 2rem;
+}
+.table-recruitment tbody tr:last-child td:last-child{
+    border-radius: 0 0 2rem 0;
+}
+.table-recruitment tr{
+    background-color: #f9f9f9;
+    padding:0.5rem;
+}
+
+
+/* RECRUITMENT DETAIL */
+
+.recruitDetail-header{
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.recruitDetail-header .header-main{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.5rem;
+}
+
+.recruitDetail-header .header-main img{
+    width: 40rem;
+}
+
+.recruitDetail-header .header-title{
+    width: calc((100% - 40rem) - 1.5rem);
+    padding: 3rem 0;
+    border-radius: 2rem;
+    text-align: center;
+    background: rgb(4,115,235);
+    background: linear-gradient(90deg, rgba(4,115,235,1) 0%, rgba(36,179,251,1) 100%);
+}
+
+.recruitDetail-header .header-title .position,
+.recruitDetail-header .header-title .position-eng{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.recruitDetail-header .header-title .position{
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.recruitDetail-header .header-title .position-eng{
+    font-size: 3rem;
+}
+
+.recruitDetail-wrapper{
+    background-color: #f5f5fa;
+    padding: 2rem 0 5rem;
+}
+
+.recruitDetail-wrapper .recruitDetail-main{
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 5rem;
+}
+
+.recruitDetail-wrapper .title{
+    margin-bottom: 3rem;
+    color: #0578c4;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.recruitDetail-wrapper .job-des,
+.recruitDetail-wrapper .contact{
+    margin-bottom: 2rem;
+}
+
+.recruitDetail-wrapper .job-des th,
+.recruitDetail-wrapper .job-des td{
+    padding: 2rem 3rem;
+    border: 1px solid #0578c4;
+}
+
+.recruitDetail-wrapper .job-des th,
+.recruitDetail-wrapper .benefit th{
+    font-family: "l9";
+    font-size: 1.8rem;
+}
+
+.recruitDetail-wrapper .benefit{
+    margin-bottom: 5rem;
+}
+
+.recruitDetail-wrapper .benefit table{
+    border-radius: 2rem;
+    border-collapse: inherit;
+    border: 1px solid #bce2fb;
+}
+
+.recruitDetail-wrapper .benefit th,
+.recruitDetail-wrapper .benefit td{
+    border-bottom: 1px solid #fff;
+}
+
+.recruitDetail-wrapper .benefit tr:last-child th,
+.recruitDetail-wrapper .benefit tr:last-child td{
+    border-bottom: none;
+}
+
+.recruitDetail-wrapper .benefit th{
+    font-size: 2rem;
+    padding: 3rem 4rem;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #0578c4;
+    background-color: #bce2fb;
+}
+
+.recruitDetail-wrapper .benefit td{
+    vertical-align: middle;
+    background-color: #eef8fe;
+}
+
+.recruitDetail-wrapper .benefit-list{
+    padding-left: 3.5rem;
+    list-style-type: disc;
+}
+
+.recruitDetail-wrapper .benefit-item{
+    font-size: 1.6rem;
+    color: #0578c4;
+    margin-bottom: 1.5rem;
+}
+
+.recruitDetail-wrapper .benefit-item:last-child{
+    margin-bottom: 0;
+}
+
+.recruitDetail-wrapper .benefit tr:first-child th{
+    border-top-left-radius: 2rem;
+}
+
+.recruitDetail-wrapper .benefit tr:first-child td{
+    border-top-right-radius: 2rem;
+}
+
+.recruitDetail-wrapper .benefit tr:last-child th{
+    border-bottom-left-radius: 2rem;
+}
+
+.recruitDetail-wrapper .benefit tr:last-child td{
+    border-bottom-right-radius: 2rem;
+}
+
+.recruitDetail-wrapper .contact-main{
+    position: relative;
+    border-radius: 2rem;
+    border: 2px solid #ff9801;
+    padding: 5rem 3rem 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.recruitDetail-wrapper .contact-title{
+    font-size: 3rem;
+    font-family: "l5";
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #ff9801;
+    position: absolute;
+    left: 3rem;
+    top: -4rem;
+    border: 8px solid #fff;
+    border-radius: 1.5rem;
+}
+
+.recruitDetail-wrapper .contact-main .table-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    font-family: "l9";
+}
+
+.recruitDetail-wrapper .contact-main th,
+.recruitDetail-wrapper .contact-main td{
+    padding: 1rem;
+}
+
+.recruitDetail-wrapper .contact-note{
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color: #ff9801;
+    padding: 2rem 4rem;
+    border-top-left-radius: 6rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.recruitDetail-wrapper .contact-note span{
+    font-size: 2rem;
+    font-family: "lb";
+}
+
+.recruitDetail-wrapper .control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.recruitDetail-wrapper .btn-back,
+.recruitDetail-wrapper .btn-apply{
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+}
+
+.recruitDetail-wrapper .btn-back{
+    color: #000;
+    text-decoration: none;
+}
+
+.recruitDetail-wrapper .btn-apply{
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background-color: #fb5152;
+}
+
+#careerModal .modal-content{
+    padding: 3rem 3rem;
+    border-radius: 2rem;
+}
+.modal-title-registerCV {
+    color: #0578c4;
+}
+.form-control-registerCV{
+    width: 100%;
+    border: 1px solid #ced4da;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #f9f9f9;
+}
+.form-control-register {
+    padding: 0rem 0 1rem 1rem;
+}
+.modal-footer-upload .form-group.mb-0 {
+    padding: 0.5rem 0;
+    float: left;
+    font-size: 1.5rem;
+}
+.modal-footer-upload .btn-primary{
+    background-color: #f18918;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #f18918;
+    float: right;
+}
+.modal-body-register{
+    position: relative;
+    flex: 1 1 auto;
+}
+#careerModal .modal-dialog{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    max-width: 100%;
+}
+#careerModal .modal-dialog .modal-content{
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
