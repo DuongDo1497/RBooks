@@ -1,4 +1,12 @@
 <div class="owl-carousel owl-theme banners-carousel">
+	<div class="item"><a href="https://rbookspaper.com"><img src="{{ asset('imgs/banners/banner49.png') }}" class="img-fluid"></a></div>
+
+	<div class="item"><a href="https://rbookspaper.com/prime/"><img src="{{ asset('imgs/banners/banner50.png') }}" class="img-fluid"></a></div>
+
+	<div class="item"><a href="https://rbookspaper.com/high-quality/"><img src="{{ asset('imgs/banners/banner51.png') }}" class="img-fluid"></a></div>
+
+	<div class="item"><a href="https://rbookspaper.com/premium/"><img src="{{ asset('imgs/banners/banner52.png') }}" class="img-fluid"></a></div>
+
 	<div class="item"><a href="http://rbooks.vn/resources/views/pages/shopping/p114/blockchain-co-hoi-hay-bong-bong-chien-luoc-ico-thanh-cong.html"><img src="{{ asset('imgs/banners/banner47.jpg') }}" class="img-fluid"></a></div>
 
 	<div class="item"><a href="http://rbooks.vn/resources/views/pages/shopping/p111/bo-sach-chua-lanh-3-cuon-chua-lanh-tam-tri-truong-thanh-nao-khong-don-dau-chua-lanh-co-the-yeu-co-the-mot-chut-doi-ve-vang-nhieu-phan-chua-lanh-loi-song-thay-loi-song-doi-cuoc-doi.html"><img src="{{ asset('imgs/banners/banner39.jpg') }}" class="img-fluid"></a></div>
