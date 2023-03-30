@@ -37,6 +37,9 @@ Route::group(['namespace' => 'Shopping'], function () {
 });
 Route::get('/publisher/{alias}.html', 'PublisherController@index')->where('alias', '.*')->name('publisher.index');
 
+Route::get('/resultPayment', 'CheckoutController@resultPayment')->name('resultPayment');
+Route::get('/ipnPayment', 'CheckoutController@ipnPayment')->name('ipnPayment');
+
 Route::group(['prefix' => 'checkout'], function () {
     Route::get('/shipping', 'CheckoutController@shipping')->name('shipping');
     Route::get('/shipping-notLogin', 'CheckoutController@shippingNotLogin')->name('shipping-notlogin');
@@ -48,6 +51,7 @@ Route::group(['prefix' => 'checkout'], function () {
     Route::get('/coupon', 'CheckoutController@coupon')->name('checkout-coupon');
     //Vinhomes
     Route::get('/vinhomes', 'CheckoutController@vinhomes')->name('vinhomes');
+
 });
 
 Route::group(['prefix' => 'customer'], function () {

@@ -52,6 +52,10 @@
                             <input type="radio" class="custom-control-input" id="payment_method_unchecked" value="2" name="payment_method">
                             <label class="custom-control-label" for="payment_method_unchecked">{{ trans('home.Thanh toán bằng chuyển khoản ngân hàng') }}</label>
                         </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="payment_method_unchecked" value="3" name="payment_method">
+                            <label class="custom-control-label" for="payment_method_unchecked">Thanh toán qua ngân lượng</label>
+                        </div>
                     </div>
                     <div class="custom-control custom-checkbox vat_method mt-4 mr-sm-2">
                         <input type="checkbox" class="custom-control-input" id="customControlVAT" name="checkVat">

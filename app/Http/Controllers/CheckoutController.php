@@ -64,8 +64,27 @@ class CheckoutController extends Controller
         ]);
     }
 
+/**
+ * addToLog
+ *
+ * @author  linh
+ * @param   string $somecontent
+ * @access  public
+ * @date    Jul 19, 2006 3:10:43 PM
+ */
+function addToLog($somecontent) {
+    $is_debug = true;
+    if ($is_debug){
+        $filename = 'log.txt';
+        $somecontent = $somecontent."\n";
+        $handle = fopen($filename, 'a');
+        fwrite($handle, $somecontent);
+        fclose($handle);
+    }
+}
+
     public function beforProcess(Request $request)
-    {
+    { 
         if (!Auth::check()) {
             $custt = Customer::where('email', $request->email)->first();
             if ($custt == NULL) {
@@ -141,6 +160,13 @@ class CheckoutController extends Controller
         $carts = session('cart');
         $total = session('total');
 
+        $addres = "";
+        if (Auth::check()) {
+            $addres = $address->address . " - " . "Phường/Xã: " . $address->ward . " - " . "Quận/Huyện: " . $address->district . " - " . "Tỉnh/Tp " . $address->city;
+        } else {
+            $addres = $address->address;
+        }
+            
         $order = DB::transaction(function () use ($request, $address, $carts, $total) {
             $countGift = Gift::where('created_at', Carbon::now())->count() + 1;
 
@@ -361,15 +387,217 @@ class CheckoutController extends Controller
             ]);
             $gift = Gift::create($gift_data);
         }
-        if ($request->check == "on") {
-            $this->mailGift($gift);
-            return redirect(route('checkout-done-gift', ['id' => $gift->id]));
-        } else {
-            $this->mailOrder($order);
-            return redirect(route('checkout-done', ['id' => $order->id]));
+
+        //Thanh toan qua alepay
+        if ($request->payment_method == "3"){
+            $customer = Customer::where('user_id', Auth::id())->first();
+            
+            $orderInfo = "Thanh toán đơn hàng " . $order->order_number;
+            $amount = $order->total . "";
+            $orderId = "Đơn hàng số " . $order->id;
+            $customer_id = $customer->id;
+            $buyerName = $customer->fullname;
+            $buyerEmail = $customer->email;
+            $buyerPhone = $customer->phone . " " . $address->phone;
+            $buyerAddress = $addres . "";
+
+            $url = "https://rbooks.vn";
+            $returnUrl = "$url/resultPayment";
+            $notifyurl = "$url/ipnPayment";
+
+            $result = $this->processSendRequestToALEPAY($orderId, $orderInfo, $amount, $returnUrl, $notifyurl, $buyerName, $buyerEmail, $buyerPhone, $buyerAddress);
+           
+            if (!empty($result->code)) {
+                if ($result->code == '000') {//Xu ly alepay thanh cong
+                    if ($request->check == "on") {
+                        $this->mailGift($gift);
+                    } else {
+                        $this->mailOrder($order);
+                    }
+
+                    return redirect($result->checkoutUrl);
+                } else {
+                    $error = 3;
+                    $message = $result->message;
+                    return view('pages.checkout.message', ['errorCode' => $error, 'infor' => $message]);
+                }
+            }
+        }else{
+            if ($request->check == "on") {
+                $this->mailGift($gift);
+                return redirect(route('checkout-done-gift', ['id' => $gift->id]));
+            } else {
+                $this->mailOrder($order);
+                return redirect(route('checkout-done', ['id' => $order->id]));
+            }
         }
     }
 
+    /********* Thanh toan qua alopay ************************************************************/
+    public function resultPayment(Request $request)
+    {
+        $errorCode = $request->errorCode;
+        $transactionCode = $request->transactionCode;
+
+        $retData = $this->checkResultSendRequestToALEPAY($transactionCode);
+        $error = $retData['error'];
+        $message = $retData['message'];   
+        $orderId = $retData['orderCode'];
+
+        return view('pages.checkout.message', ['errorCode' => $error, 'infor' => $message]);
+
+    }    
+
+    public function ipnPayment(Request $request)
+    {
+        $error = "2";
+        $message = "Thanh toán bị hủy.";
+        return view('pages.checkout.message', ['errorCode' => $error, 'infor' => $message]);
+    } 
+
+    /**
+     * Xu ly thong tin gui request toi he thong ALEPAY
+     *
+     * @author  linh
+     * @param   string $somecontent
+     * @access  public
+     * @date    April 19, 2020 3:10:43 PM
+     */
+    function processSendRequestToALEPAY($orderId, $orderInfo, $amount, $returnUrl, $notifyurl, $buyerName, $buyerEmail, $buyerPhone, $buyerAddress)
+    {
+        //Thong tin key ma hoa lay tu config alepays
+        $apiKey = config('alepays.apiKey');
+        $encryptKey = config('alepays.encryptKey');
+        $checksumKey = config('alepays.checksumKey');
+        $url_request_payment = config('alepays.url_request_payment');
+     
+        $data = array();
+        $data['tokenKey'] = $apiKey;
+        $data['returnUrl'] = $returnUrl;
+        $data['cancelUrl'] = $notifyurl;
+        $data['customMerchantId'] = 'Rbooks';
+        $data['amount'] = intval(preg_replace('@\D+@', '', $amount));
+        $data['orderCode'] = $orderId;
+        $data['currency'] = "VND";
+        $data['orderDescription'] = $orderInfo;
+        $data['totalItem'] = 1;
+        $data['buyerName'] = trim($buyerName);
+        $data['buyerEmail'] = trim($buyerEmail);
+        $data['buyerPhone'] = trim($buyerPhone);
+        $data['buyerAddress'] = trim($buyerAddress);
+        $data['buyerCity'] = trim('TP.HCM');
+        $data['buyerCountry'] = trim('VN');
+        $data['checkoutType'] = 3; // Thanh toán the quoc te, noi dia, tra gop
+        $data['month'] = 3;
+        $data['paymentHours'] = 48; //48 tiếng :  Thời gian cho phép thanh toán (tính bằng giờ)
+        $data['allowDomestic'] = true;
+    
+        $signature = $this->makeSignature($data, $checksumKey);
+        $data['signature'] = $signature;
+
+        $result = $this->execPostRequest($url_request_payment, json_encode($data));
+        $jsonResult = json_decode($result);  // decode json
+    
+        return $jsonResult;
+        
+    }
+    
+    /**
+     * Kiem tra ket qua sau khi thanh toan ALEPAY => thanh cong hay that bai
+     *
+     * @author  linh
+     * @param   string $somecontent
+     * @access  public
+     * @date    April 19, 2020 3:10:43 PM
+     */
+    function checkResultSendRequestToALEPAY($transactionCode)
+    {
+        //Thong tin key ma hoa lay tu config alepays
+        $apiKey = config('alepays.apiKey');
+        $encryptKey = config('alepays.encryptKey');
+        $checksumKey = config('alepays.checksumKey');
+        $url_request_payment = config('alepays.url_request_payment');
+        $url_get_transaction_info = config('alepays.url_get_transaction_info');    
+    
+        $data = array();
+        $data['tokenKey'] = $apiKey;
+        $data['transactionCode'] = $transactionCode;
+        $signature = $this->makeSignature($data, $checksumKey);
+        $data['signature'] = $signature;
+        
+        $result = $this->execPostRequest($url_get_transaction_info, json_encode($data));
+        $jsonResult = json_decode($result);  // decode json
+        
+        $error = ''; $message = ''; $orderId = '';   
+        if ($jsonResult->code == '000') {
+            $error = '0';
+            $message = 'Thanh toán dịch vụ thành công.';
+            $orderCode = $jsonResult->orderCode;
+        } else {
+            $error = '2';
+            $message = 'Thanh toán lỗi: ' . $jsonResult->message;
+        }
+    
+        $data = ['error' => $error,'message' => $message,'orderCode' => $orderCode];
+    
+        return $data;
+    }
+
+    /**
+     * Thu vien thanh toan MOMO
+     *
+     * @author  linh
+     * @access  public
+     * @date    April 19, 2020 3:10:43 PM
+     */
+    function execPostRequest($url, $data)
+    {
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                'Content-Type: application/json',
+                'Content-Length: ' . strlen($data))
+        );
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+        //execute post
+        $result = curl_exec($ch);
+        //close connection
+        curl_close($ch);
+        return $result;
+    }
+    
+    /**
+     * Thu vien makeSignature
+     *
+     * @author  linh
+     * @access  public
+     * @date    April 19, 2020 3:10:43 PM
+     */
+    function makeSignature($data, $hash_key)
+    {
+        $hash_data = '';
+        ksort($data);
+        $is_first_key = true;
+        foreach ($data as $key => $value) {
+            if (is_bool($value)) {
+                $value = $value ? 'true' : 'false';
+            }
+            if (!$is_first_key) {
+                $hash_data .= '&' . $key . '=' . $value;
+            } else {
+                $hash_data .= $key . '=' . $value;
+                $is_first_key = false;
+            }
+        }
+    
+        $signature = hash_hmac('sha256', $hash_data, $hash_key);
+        return $signature;
+    }
+    /********* Ket thuc Thanh toan qua alopay ************************************************************/
+    
     public function done($id)
     {
         $order = Order::findOrFail($id);
@@ -390,7 +618,6 @@ class CheckoutController extends Controller
     {
         Mail::send('mail.gift_order', ['gift' => $gift], function ($message) use ($gift) {
             $message->from('rbookscorp@gmail.com', 'RBooks.vn');
-
             $message->to($gift->customer->email)->subject('Thông tin quà tặng')->cc('chaupham@lamians.com')->bcc('info@rbooks.vn')->bcc('rbookscorp@gmail.com');
         });
     }
@@ -398,7 +625,6 @@ class CheckoutController extends Controller
     {
         Mail::send('mail.order', ['order' => $order], function ($message) use ($order) {
             $message->from('rbookscorp@gmail.com', 'RBooks.vn');
-
             $message->to($order->customer->email)->subject('Đặt hàng thành công')->cc('chaupham@lamians.com')->bcc('info@rbooks.vn')->bcc('rbookscorp@gmail.com');
         });
     }
