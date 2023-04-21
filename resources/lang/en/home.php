@@ -40,7 +40,8 @@ return [
 
 	'Home' => 'Home',
 	'About' => 'About',
-	'Products' => 'Products',
+	'Books' => 'Books',
+	'Paper' => 'Paper',
 	'Blog' => 'Blog',
 	'Career' => 'Career',
 	'Contact' => 'Contact',

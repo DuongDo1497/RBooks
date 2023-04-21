@@ -148,6 +148,7 @@ Route::get('/how-to-order', 'HomeController@order')->name('how-to-order');
 
 Route::get('contact', 'HomeController@contact')->name('contact');
 Route::get('products', 'HomeController@products')->name('products');
+Route::get('paper', 'HomeController@paper')->name('paper');
 
 //Change Language
 // Route::group(['middleware' => 'locale'], function() {

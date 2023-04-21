@@ -39,7 +39,8 @@ return [
 
 	'Home' => 'Trang chủ',
 	'About' => 'Giới thiệu',
-	'Products' => 'Sản phẩm',
+	'Books' => 'Sách',
+	'Paper' => 'Giấy',
 	'Blog' => 'Tin tức',
 	'Career' => 'Tuyển dụng',
 	'Contact' => 'Liên hệ',

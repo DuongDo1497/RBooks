@@ -31,7 +31,10 @@
                             <a href="{{ route('about-rbooks') }}" class="menu-link">{{trans('home.About')}}</a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{ route('products') }}" class="menu-link">{{trans('home.Products')}}</a>
+                            <a href="{{ route('products') }}" class="menu-link">{{trans('home.Books')}}</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="{{ route('paper') }}" class="menu-link">{{trans('home.Paper')}}</a>
                         </li>
                         <li class="menu-item">
                             <a href="{{ route('recruitment') }}" class="menu-link">{{trans('home.Career')}}</a>

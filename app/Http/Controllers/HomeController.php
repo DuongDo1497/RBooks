@@ -228,6 +228,12 @@ class HomeController extends Controller
         return view('pages.homecontroller.products', ['total' => $total, 'categories' => $categories, 'products' => $products, 'locale' => $locale]);
     }
 
+    public function paper()
+    {
+        $total = session('total');
+        return view('pages.homecontroller.paper', ['total' => $total]);
+    }
+
     public function contact()
     {
         $total = session('total');
