@@ -82,5 +82,26 @@
             </div>
         </div>
     </div>
+
+    <div class="section section-product">
+        <div class="container">
+            <div class="product-main">
+                <h2 class="title">Sản phẩm Giấy</h2>
+                <div class="filter">
+                    <ul class="menu-filter">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link filter-all">Tất cả</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">A4</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">A5</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

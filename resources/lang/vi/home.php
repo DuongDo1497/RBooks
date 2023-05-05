@@ -57,7 +57,7 @@ return [
 	// 'Literature & Fiction' => 'Sách Văn Học - Tiểu Thuyết',
 
 	'Rbooks' => 'CÔNG TY TNHH R BOOKS',
-	'Address'=>'Địa chỉ: LM81- 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.',
+	'Address'=>'LM81 - 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.',
 	'Gettoknowus' => 'VỀ R BOOKS',
 	'Giới thiệu' => 'Giới thiệu',
 	'Careers' => 'Tuyển dụng',

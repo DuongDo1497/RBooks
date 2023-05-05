@@ -84,39 +84,27 @@
       </div>
     </div>
 
-    <div class="section section-featured-book">
+    <div class="section section-brand-intro">
       <div class="container">
-        <div class="featured-book">
+        <div class="brand-intro">
           <div class="item">
             <a
-              href="https://rbooks.vn/resources/views/pages/shopping/p93/dam-me-khong-de-lam-canh-dam-me-la-de-ra-tien-tang-kem-bookmark.html">
-              <img class="img-fluid avatar" src="{{ asset('imgs/featured-3.png') }}" alt="">
-              <div class="content">
-                <h4 class="title">Emma Casey</h4>
-                <p class="date">2021</p>
-              </div>
+              href="#">
+              <img class="img-fluid avatar" src="{{ asset('imgs/brand-intro-1.png') }}" alt="">
             </a>
           </div>
 
           <div class="item">
             <a
-              href="https://rbooks.vn/resources/views/pages/shopping/p116/bossstack-ca-nhan-chien-luoc-boc-tach-dong-tien-ca-nhan-va-dong-tien-dau-tu-kinh-doanh.html">
-              <img class="img-fluid avatar" src="{{ asset('imgs/featured-1.png') }}" alt="">
-              <div class="content">
-                <h4 class="title">Chau Pham</h4>
-                <p class="date">2022</p>
-              </div>
+              href="#">
+              <img class="img-fluid avatar" src="{{ asset('imgs/brand-intro-2.png') }}" alt="">
             </a>
           </div>
 
           <div class="item">
             <a
-              href="https://rbooks.vn/resources/views/pages/shopping/p101/thoat-bay-tam-ly-giao-dich-trong-chung-khoan-gong-loi-khong-gong-lo-tang-kem-bookmark.html">
-              <img class="img-fluid avatar" src="{{ asset('imgs/featured-2.png') }}" alt="">
-              <div class="content">
-                <h4 class="title">Rita Stevens</h4>
-                <p class="date">2021</p>
-              </div>
+              href="#">
+              <img class="img-fluid avatar" src="{{ asset('imgs/brand-intro-3.png') }}" alt="">
             </a>
           </div>
         </div>

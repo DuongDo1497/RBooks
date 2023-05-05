@@ -61,7 +61,10 @@
                     <form action="{{ route('search') }}">
                         <div class="input-group">
                             <input class="form-control" type="text" placeholder="{{trans('home.Enter ISBN(s), title or author')}}" name = "keyword">
-                            <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                            <button class="btn btn-outline-secondary" type="submit">
+                                {{-- <i class="fas fa-search"></i> --}}
+                                <img class="img-fluid" src="{{ 'imgs/icon-search.svg' }}" alt="">
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -81,7 +84,7 @@
                     <div class="cart">
                         <a href="{{ route('cart') }}">
                             <div class="icon">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <img class="img-fluid" src="{{ '/imgs/icon-shopping-cart.svg' }}" alt="">
                                 <span class="cart-number">{{ (!empty($total)) ? $total['totalQuantity'] : "0" }}</span>
                             </div>
                             <div class="text">
@@ -94,7 +97,7 @@
                         @guest
                         <a href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">
                             <div class="icon">
-                                <i class="fa-regular fa-circle-user"></i>
+                                <img class="img-fluid" src="{{ '/imgs/icon-log-in.svg' }}" alt="">
                             </div>
                             <div class="text">
                                 {{trans('home.Login')}}
@@ -166,19 +169,16 @@
                         </a>
                         <div class="content">
                             <p class="text">
+                                <img class="img-fluid" src="{{ asset('/imgs/icon-location.svg') }}" alt="">
                                 {{trans('home.Address')}}
                             </p>
                             <p class="text">
-                                <span class="icon">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </span>
-                                info@rbooks.vn
+                                <img class="img-fluid" src="{{ asset('/imgs/icon-telephone.svg') }}" alt="">
+                                Hotline: 0817 548 998
                             </p>
                             <p class="text">
-                                <span class="icon">
-                                    <i class="fa-regular fa-address-book"></i>
-                                </span>
-                                08 4966 4005
+                                <img class="img-fluid" src="{{ asset('/imgs/icon-mail.svg') }}" alt="">
+                                Email: info@rbooks.vn
                             </p>
                         </div>
                     </div>

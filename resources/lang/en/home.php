@@ -58,7 +58,7 @@ return [
 	// 'Literature & Fiction' => 'Sách Văn Học - Tiểu Thuyết',
 
 	'Rbooks' => 'R Books Co., Ltd.',
-	'Address'=>'Address: LM81- 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Dien Bien Phu, Ward 22, Binh Thanh District, HCM City.',
+	'Address'=>'LM81 - 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Dien Bien Phu, Ward 22, Binh Thanh District, Ho Chi Minh City.',
 	'Gettoknowus' => ' Get to Know Us',
 	'Giới thiệu' => 'About',
 	'Careers' => 'Careers',
