@@ -50,8 +50,4 @@ class Product extends Model
     {
         return $this->belongsToMany('App\Gift');
     }
-    public function orders()
-    {
-        return $this->belongsToMany('App\Order');
-    }
 }
