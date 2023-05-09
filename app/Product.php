@@ -11,7 +11,7 @@ class Product extends Model
     
     protected $table = 'products';
 
-    protected $fillable = ['sku','name','slug', 'quantitative', 'publishing_year', 'cover_price', 'sale_price', 'description', 'excerpt', 'quantity', 'status', 'updated_user_id'];
+    protected $fillable = ['sku','name','slug', 'quantitative', 'packing', 'publishing_year', 'cover_price', 'sale_price', 'description', 'excerpt', 'quantity', 'status', 'updated_user_id'];
 
     public function images()
     {
