@@ -297,6 +297,35 @@ h5 {
   text-align: center;
 }
 
+@media (max-width: 575.98px) {
+  .header .header-main {
+    gap: 2rem;
+  }
+
+  .header .header-search {
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .header-search input {
+    padding: 0.375rem 1rem;
+  }
+
+  .header-search button {
+    padding: 0.5rem 1rem;
+  }
+
+  .header .header-control {
+    max-width: 7rem;
+    width: 100%;
+    gap: 0 15px;
+  }
+
+  .header-control .text {
+    display: none;
+  }
+}
+
 /* END HEADER */
 
 /* MENU DEFAULT */
@@ -368,6 +397,13 @@ h5 {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 575.98px) {
+  .menu-default .menu-link {
+    font-size: 1.35rem;
+    padding: 0 1rem;
+  }
 }
 
 /* END MENU DEFAULT */
@@ -584,6 +620,18 @@ h5 {
 
 .footerCopyright-main .language .menu-link {
   display: inline-block;
+}
+
+@media (max-width: 575.98px) {
+  .footerTop-main {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footerTop .item {
+    width: 100% !important;
+  }
 }
 
 /* END FOOTER */

@@ -211,12 +211,13 @@
 .banner-thumb {
   flex: 1;
   display: flex;
+  align-items: stretch;
   gap: 0 1rem;
 }
 
 .banner-thumb .item {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background-color: #ffffff;
   border-radius: 1rem;
   display: flex;
@@ -649,21 +650,21 @@
 }
 
 .product.vertical.product-carousel-list .item,
-.product.vertical.product-detail-list .item {
+.product.vertical.product-hot-list .item {
   width: 100%;
 }
 
 .product-carousel-list .owl-stage,
 .product-carousel-list .owl-stage .owl-item,
 .product-carousel-list .owl-stage .owl-item .item,
-.product-detail-list .owl-stage,
-.product-detail-list .owl-stage .owl-item,
-.product-detail-list .owl-stage .owl-item .item {
+.product-hot-list .owl-stage,
+.product-hot-list .owl-stage .owl-item,
+.product-hot-list .owl-stage .owl-item .item {
   height: 100%;
 }
 
 .product-carousel-list .owl-stage,
-.product-detail-list .owl-stage {
+.product-hot-list .owl-stage {
   padding: calc(38px / 2) 0;
 }
 
@@ -1461,4 +1462,100 @@
   width: 100%;
   height: 100%;
   margin-top: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .header-logo {
+    max-width: 10rem;
+  }
+
+  .introduce-wrap {
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  .menu-category,
+  .banner {
+    width: 100%;
+  }
+
+  .menu-category .card-header,
+  .special-books .card-header,
+  .product-carousel .card-header {
+    padding: 1.5rem;
+  }
+
+  .menu-main .menu-link {
+    font-size: 1.5rem;
+  }
+
+  .banner-thumb {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .banner-thumb .item {
+    width: calc(50% - 0.5rem);
+  }
+
+  .banner-thumb .icon {
+    width: 3rem;
+  }
+
+  .banner-thumb .title {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .banner-thumb .des {
+    font-size: 1.1rem;
+  }
+
+  .brand-intro {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .productFirst-wrap .row,
+  .productSecond-wrap .row,
+  .banner-about-wrap .row,
+  .productThird-wrap .row {
+    row-gap: 15px;
+  }
+
+  .product-tab .nav-link {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 0;
+  }
+
+  .product.vertical .item,
+  .product-main .product.vertical .item {
+    width: calc((100% / 2) - 25px);
+  }
+
+  .product.horizontal .item a {
+    gap: 3rem;
+    justify-content: flex-start;
+  }
+
+  .promotion-hot img {
+    margin: 0 auto;
+  }
+
+  .menu-filter {
+    display: none;
+  }
+
+  .product-main {
+    padding: 25px;
+  }
+
+  .product-main .product.vertical {
+    column-gap: 5rem;
+  }
+
+  .product-main .pagination {
+    justify-content: center;
+  }
 }

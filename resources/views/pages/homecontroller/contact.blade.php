@@ -19,23 +19,23 @@
           </form>
         </div>
         <div class="form-contact-time">
-          <div class="calendar">
+          <div class="form-contact-item calendar">
             <img class="icon-calendar" src="{{ 'imgs/icon-calendar.png' }}" alt="">
             <div class="calendar-timeday">
               <p class="time">8 AM - 5 PM <b class="day">( Thứ 2 - thứ 6 )</b></p>
               <p class="time">8 AM - 12 PM <b class="day">( Thứ 7 ) - Chủ nhật nghỉ</b></p>
             </div>
           </div>
-          <div class="form-contact-address">
+          <div class="form-contact-item form-contact-address">
             <i class="fa-solid fa-location-dot"></i>
             <p class="icon-address-title">LM81 - 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên
               Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.</p>
           </div>
-          <div class="form-contact-email">
+          <div class="form-contact-item form-contact-email">
             <i class="fa-solid fa-envelope"></i>
             <p class="icon-email-title"> info@rbooks.vn</p>
           </div>
-          <div class="form-contact-call">
+          <div class="form-contact-item form-contact-call">
             <i class="fa-solid fa-phone-volume"></i>
             <p class="icon-call-title">08 4966 4005 (Viber/Skype/Zalo)</p>
           </div>

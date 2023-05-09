@@ -174,7 +174,7 @@
                             </p>
                             <p class="text">
                                 <img class="img-fluid" src="{{ asset('/imgs/icon-telephone.svg') }}" alt="">
-                                Hotline: 0817 548 998
+                                Hotline: 08 4966 4005
                             </p>
                             <p class="text">
                                 <img class="img-fluid" src="{{ asset('/imgs/icon-mail.svg') }}" alt="">
@@ -224,7 +224,7 @@
                         </h4>
 
                         <div class="footerTop-social">
-                            <div class="fb-page" data-href="https://www.facebook.com/rbooks.vn" data-tabs="events" data-width="437" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-page" data-href="https://www.facebook.com/rbooks.vn" data-tabs="events" data-width="320" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <blockquote cite="https://www.facebook.com/rbooks.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/rbooks.vn">Sách RBooks</a></blockquote>
                             </div>
                         </div>

@@ -42,23 +42,10 @@
               Nâng tầm tri thức
               <img class="icon-ngoac" src="{{ 'imgs/icon_dong_ngoac.png' }}" alt="">
             </p>
-            <!-- <div class="about-logo-slogan">
-           
-          </div> -->
-            <!-- <img src="{{ 'imgs/hinh_nen_about.png' }}" alt=""> -->
-            <!-- <div class="about-logo-content">
-          <h4>Logo</h4>
-          <p>Dựa trên điểm nhấn cuốn sách thể hiện ngọn lửa tri thức, ngọn lửa trí tuệ;
-           Logo RBooks thể hiện là một biểu tượng hạt giống tri thức đang nảy mầm mang đến niềm tin,
-           kiến thức và cơ hội thay đổi cuộc đời cho mỗi độc giả Việt Nam.</p>
-         </div>
-         <div class="about-logo-img">
-          <img class="img-fluid" src="{{ 'imgs/logo_blue.png' }}" alt="R books Logo" title="RBooks.VN">
-         </div> -->
           </div>
 
           <div class="about-content-slogan">
-            <div class="content-slogan-item">
+            <div class="content-slogan-item border-rl-2">
               <div class="content-slogan border-rl-2">
                 <div class="content-slogan__image"><img src="{{ 'imgs/icon_slogan.png' }}" alt=""></div>
                 <h4>Slogan</h4>

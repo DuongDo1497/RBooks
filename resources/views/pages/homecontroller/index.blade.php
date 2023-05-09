@@ -37,9 +37,9 @@
               <li class="menu-item">
                 <a href="{{ route('paper') }}" class="menu-link">{{ trans('home.Paper') }}</a>
               </li>
-              <li class="menu-item">
+              {{-- <li class="menu-item">
                 <a href="{{ route('recruitment') }}" class="menu-link">{{ trans('home.Career') }}</a>
-              </li>
+              </li> --}}
               <li class="menu-item">
                 <a href="{{ route('contact') }}" class="menu-link">{{ trans('home.Contact') }}</a>
               </li>
@@ -299,7 +299,7 @@
                     <h5 class="title">Sách sắp phát hành</h5>
                   </div>
                   <div class="card-body">
-                    <div class="owl-carousel owl-theme product product-carousel-list vertical flex-nowrap">
+                    <div class="owl-carousel owl-theme product product-hot-list vertical flex-nowrap">
                       @foreach ($topCombo as $product)
                         @include('pages.homecontroller.product-a-page')
                       @endforeach

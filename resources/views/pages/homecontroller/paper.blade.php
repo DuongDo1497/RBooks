@@ -37,9 +37,6 @@
                             <a href="{{ route('paper') }}" class="menu-link">{{trans('home.Paper')}}</a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{ route('recruitment') }}" class="menu-link">{{trans('home.Career')}}</a>
-                        </li>
-                        <li class="menu-item">
                             <a href="{{ route('contact') }}" class="menu-link">{{trans('home.Contact')}}</a>
                         </li>
                     </ul>
