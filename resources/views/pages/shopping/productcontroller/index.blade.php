@@ -34,7 +34,7 @@
 
                   <div class="type">
                     <p class="author">
-                      Tác giả: <span>{{ $product->author ?? 'No Name' }}</span>
+                      {{-- Tác giả: --}} <span>{{ $product->author ?? 'No Name' }}</span> 
                     </p>
                     <div class="rate">
                       @if (empty($comments->first()))
@@ -72,48 +72,57 @@
                       {{ $product->excerpt }}
                     </p>
                   </div>
+
                   <div class="order">
                     <div class="order-wrap">
                       <form method="get" action="{{ route('cart-add') }}">
                         {{ csrf_field() }}
                         <input type="hidden" name="id" value="{{ $product->id }}" />
-                        <div class="quantity-group btn-group">
-                          <button type="button" class="btn btn-number minus" data-type="minus"><i
-                              class="fa-solid fa-minus"></i></button>
-                          <input type="text" class="input-number text-center" id="number-quantity" value="1"
-                            name="quantity" min="1" max="100" pattern="[0-9]*">
-                          <button type="button" class="btn btn-number plus" data-type="plus"><i
-                              class="fa-solid fa-plus"></i></button>
+                        <div class="quantity-wrap">
+                          <p>Số lượng</p>
+                          <div class="quantity-group btn-group">
+                            <button type="button" class="btn btn-number minus" data-type="minus"><i
+                                class="fa-solid fa-minus"></i></button>
+                            <input type="text" class="input-number text-center" id="number-quantity" value="1"
+                              name="quantity" min="1" max="100" pattern="[0-9]*">
+                            <button type="button" class="btn btn-number plus" data-type="plus"><i
+                                class="fa-solid fa-plus"></i></button>
+                          </div>
                         </div>
-                        <div class="cart-group">
-                          @if ($product->product_warehouse->where('warehouse_id', '2')->first()->quantity > 0)
-                            <button type="submit"
-                              {{ $product->product_warehouse->where('warehouse_id', '2')->first()->quantity ? '' : 'disabled' }}
-                              class="btn btn-default" id="btn-buy"><i class="fa-solid fa-plus"></i> Thêm giỏ
-                              hàng</button>
-                          @else
-                            <button type="submit" class="btn btn-default" id="btn-buy">ĐẶT TRƯỚC</button>
-                          @endif
-                        </div>
-                        <div class="quantity-warehouse d-none">
-                          <!-- (Số lượng còn trong kho: {{ $product->product_warehouse->where('warehouse_id', '2')->first()->quantity }}) -->
-                          @if ($product->product_warehouse->where('warehouse_id', '2')->first()->quantity > 0)
-                            <input type="text" hidden="true" id="quantityWarehouses"
-                              value="{{ $product->product_warehouse->where('warehouse_id', '2')->first()->quantity }}">
-                          @else
-                            <input type="text" hidden="true" id="quantityWarehouses"
-                              value="{{ $product->product_warehouse->where('warehouse_id', '1')->first()->quantity }}">
-                          @endif
+                        
+                        <div class="quantity-control">
+                          <div class="cart-group">
+                            @if ($product->product_warehouse->where('warehouse_id', '2')->first()->quantity > 0)
+                              <button type="submit"
+                                {{ $product->product_warehouse->where('warehouse_id', '2')->first()->quantity ? '' : 'disabled' }}
+                                class="btn btn-default" id="btn-buy">
+                                <img class="img-fluid" src="{{ '/imgs/icon-shopping-cart-bl.svg' }}" alt="" srcset="">
+                                Thêm giỏ hàng
+                              </button>
+                            @else
+                              <button type="submit" class="btn btn-default" id="btn-buy">ĐẶT TRƯỚC</button>
+                            @endif
+                          </div>
+                          <div class="quantity-warehouse d-none">
+                            <!-- (Số lượng còn trong kho: {{ $product->product_warehouse->where('warehouse_id', '2')->first()->quantity }}) -->
+                            @if ($product->product_warehouse->where('warehouse_id', '2')->first()->quantity > 0)
+                              <input type="text" hidden="true" id="quantityWarehouses"
+                                value="{{ $product->product_warehouse->where('warehouse_id', '2')->first()->quantity }}">
+                            @else
+                              <input type="text" hidden="true" id="quantityWarehouses"
+                                value="{{ $product->product_warehouse->where('warehouse_id', '1')->first()->quantity }}">
+                            @endif
+                          </div>
+                          {{-- <div class="wishlist">
+                            <a href="#" class="btn btn-primary add-to-wishlist" data-bs-toggle="modal"
+                              data-bs-target="#getFormLike">
+                              <span class="wishlist-icon">
+                                <i class="fa-regular fa-heart"></i>
+                              </span>
+                            </a>
+                          </div> --}}
                         </div>
                       </form>
-                      <div class="wishlist">
-                        <a href="#" class="btn btn-primary add-to-wishlist" data-bs-toggle="modal"
-                          data-bs-target="#getFormLike">
-                          <span class="wishlist-icon">
-                            <i class="fa-regular fa-heart"></i>
-                          </span>
-                        </a>
-                      </div>
                     </div>
                     <!-- <span id="error" class="alert alert-danger"></span> -->
                     <div id="error"></div>
@@ -131,7 +140,7 @@
                     </div>
                   </div>
 
-                  <div class="promo-info">
+                  {{-- <div class="promo-info">
                     <img class="img-fluid image-promo" src="{{ asset('imgs/promo-info.png') }}" alt="">
                     <div class="info-detail">
                       <h5 class="title">Dịch vụ & Khuyến mãi kèm theo</h5>
@@ -185,13 +194,50 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> --}}
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="product-detail-nav mt-5">
+    <div class="section section-product-promotion">
+      <div class="container">
+        <div class="product-promotion-wrap">
+          <p class="title"><b>Dịch vụ & Khuyến mãi kèm theo</b> (Áp dụng cho các sản phẩm sách RBooks)</p>
+          <div class="promo-list">
+            <div class="promo-item">
+              <img class="img-fluid" src="{{ '/imgs/promo-product-img-1.jpg' }}" alt="" srcset="">
+              <div class="promo-item__content">
+                <p>Miễn phí giao hàng toàn quốc</p>
+                <p>Đơn hàng 300.000 đ</p>
+              </div>
+            </div>
+            <div class="promo-item">
+              <img class="img-fluid" src="{{ '/imgs/promo-product-img-2.jpg' }}" alt="" srcset="">
+              <div class="promo-item__content">
+                <p>Trải nghiệm dịch vụ Bookcare</p>
+                <p>Bọc sách Plastic cao cấp</p>
+              </div>
+            </div>
+            <div class="promo-item">
+              <img class="img-fluid" src="{{ '/imgs/promo-product-img-3.jpg' }}" alt="" srcset="">
+              <div class="promo-item__content">
+                <p>Dịch vụ</p>
+                <p>Gói quà tặng</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-product-info">
+      <div class="container">
+        <div class="product-info-wrap">
+          <div class="product-detail-nav">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
@@ -220,7 +266,6 @@
                 aria-labelledby="description-tab">
                 <div class="des-wrap">
                   {!! $product->description !!}
-                  <div class="gradient"></div>
                 </div>
                 <button type="button" class="btn btn-primary read-more"></button>
               </div>

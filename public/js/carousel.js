@@ -80,23 +80,36 @@ $(function () {
       },
       576: {
         items: 3,
-        margin: 20,
+        margin: 37,
       },
       1200: {
         items: 3,
-        margin: 37,
       },
     },
   });
 
   $(".product-detail-list").owlCarousel({
     loop: true,
-    margin: 25,
+    // margin: 25,
     nav: false,
     autoplay: true,
     autoplayTimeout: 8000,
     dots: false,
-    items: 6,
+    // items: 6,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 2,
+        margin: 20,
+      },
+      576: {
+        items: 2,
+        margin: 25,
+      },
+      1200: {
+        items: 6,
+      },
+    },
   });
 
   $(".banner-sidebar").owlCarousel({
