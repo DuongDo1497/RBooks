@@ -48,8 +48,10 @@
                 @endif
             </div>
             <div class="price">
-                <span class="sale">{{ number_format($product->sale_price) }} đ</span>
-                <span class="promo">{{ number_format($product->cover_price) }} đ</span>
+                <p class="sale"><span class="number">{{ number_format($product->sale_price) }}</span> đ</p>
+                @if(!is_null($product->sale_price) && $product->sale_price != 0)
+                    <p class="promo">{{ number_format($product->cover_price) }} đ</p>
+                @endif
             </div>
         </div>
     </a>
