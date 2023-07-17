@@ -209,7 +209,7 @@ function addToLog($somecontent) {
 
             $countOrder = Order::where('created_at', Carbon::now())->count() + 1;
             //$subtotal = (int) $total['totalPrice'];
-            $ship = $total['totalPrice'] >= 200000 ? 0 : $request->delevery_method;
+            $ship = $total['totalPrice'] >= 300000 ? 0 : $request->delevery_method;
             $sub_cover_price = $total['total_cv_price'];
             $sub_total = $total['total_cv_price'];
             $tax_total = $total['total_cv_price'] - $total['totalPrice'];
