@@ -217,7 +217,7 @@ function addToLog($somecontent) {
             if ($request->delevery_method == 30000 || $request->delevery_method == 45000) {
                 $totaled = $request->delevery_method;
             } else {
-                $totaled = $total['totalPrice'] <= 200000 ? $total['totalPrice'] + $request->delevery_method : $total['totalPrice'];
+                $totaled = $total['totalPrice'] <= 300000 ? $total['totalPrice'] + $request->delevery_method : $total['totalPrice'];
             }
 
             $gift_fee =  $request->gift_fee == null ? 0 : $request->gift_fee;
