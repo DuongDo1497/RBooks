@@ -269,7 +269,7 @@
             var prices = parseInt($('#prices').attr('data-price'));
             var discount = parseInt($('#discount').attr('data-dis'));
             //var discount_total = parseInt($('#discount_total').attr('data-distotal'));
-            if(prices >= 200000){
+            if(prices >= 300000){
                 $('#fee-ship').text('0 đ');
                 $('#customControlInline').click(function() {
                     var gift = $('#customControlInline').prop("checked");
@@ -536,7 +536,7 @@
 
                 var gift = $('#customControlInline').prop("checked");
                 console.log(gift);
-                if (data.total >= 200000){
+                if (data.total >= 300000){
                     if (gift) {
                         var giftfee = $('#customControlInline:checked').val();
                         $('#fee-ship').text("0 đ");
