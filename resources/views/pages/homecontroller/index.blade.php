@@ -34,9 +34,9 @@
               <li class="menu-item">
                 <a href="{{ route('products') }}" class="menu-link">{{ trans('home.Books') }}</a>
               </li>
-              <li class="menu-item">
+              {{-- <li class="menu-item">
                 <a href="{{ route('paper') }}" class="menu-link">{{ trans('home.Paper') }}</a>
-              </li>
+              </li> --}}
               {{-- <li class="menu-item">
                 <a href="{{ route('recruitment') }}" class="menu-link">{{ trans('home.Career') }}</a>
               </li> --}}
@@ -88,23 +88,20 @@
       <div class="container">
         <div class="brand-intro">
           <div class="item">
-            <a
-              href="#">
-              <img class="img-fluid avatar" src="{{ asset('imgs/brand-intro-1.png') }}" alt="">
+            <a href="#">
+              <img class="img-fluid avatar" src="{{ asset('imgs/BANNER-SACH-KINH-DOANH.png') }}" alt="">
             </a>
           </div>
 
           <div class="item">
-            <a
-              href="#">
-              <img class="img-fluid avatar" src="{{ asset('imgs/brand-intro-2.png') }}" alt="">
+            <a href="#">
+              <img class="img-fluid avatar" src="{{ asset('imgs/BANNER-SACH-CHUA-LANH.png') }}" alt="">
             </a>
           </div>
 
           <div class="item">
-            <a
-              href="#">
-              <img class="img-fluid avatar" src="{{ asset('imgs/brand-intro-3.png') }}" alt="">
+            <a href="#">
+              <img class="img-fluid avatar" src="{{ asset('imgs/BANNER-SACH-BAN-LINH.png') }}" alt="">
             </a>
           </div>
         </div>
@@ -136,9 +133,8 @@
               <div class="product-tab">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                      data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                      aria-selected="true">Top sách hot</button>
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                      type="button" role="tab" aria-controls="pills-home" aria-selected="true">Top sách hot</button>
                   </li>
 
                   <li class="nav-item" role="presentation">
@@ -216,12 +212,12 @@
             <div class="col-xxl-4">
               <div class="promotion-hot">
                 <!-- <img class="img-fluid" src="{{ empty($productOneSale->images->last()) ? asset(RBOOKS_NO_IMAGE_URL) : RBOOKS_IMAGE_URL . $productOneSale->images->last()->path }}" alt="">
-                                <div class="content">
-                                    <h3 class="small-title">{{ $productOneSale->author }}</h3>
-                                    <h2 class="title">{{ $productOneSale->name }} - <span class="percent">{{ round(100 - ($productOneSale->sale_price / $productOneSale->cover_price) * 100, 0) }}%</span></h2>
-                                    <p class="des">{{ date_format($productOneSale->created_at, 'Y') }}</p>
-                                    <a href="{{ route('product.index', ['id' => $productOneSale->id, 'alias' => $productOneSale->slug]) }}" class="btn btn-primary">Xem chi tiết</a>
-                                </div> -->
+                                        <div class="content">
+                                            <h3 class="small-title">{{ $productOneSale->author }}</h3>
+                                            <h2 class="title">{{ $productOneSale->name }} - <span class="percent">{{ round(100 - ($productOneSale->sale_price / $productOneSale->cover_price) * 100, 0) }}%</span></h2>
+                                            <p class="des">{{ date_format($productOneSale->created_at, 'Y') }}</p>
+                                            <a href="{{ route('product.index', ['id' => $productOneSale->id, 'alias' => $productOneSale->slug]) }}" class="btn btn-primary">Xem chi tiết</a>
+                                        </div> -->
                 <img class="img-fluid" src="{{ asset('imgs/promotion-hot.jpg') }}" alt="">
                 <a href="{{ route('product.index', ['id' => '97', 'alias' => 'combo-nguoi-tre-voi-co-don-toi-da-yeu-nguoi-am-tham-nhu-the-dung-vi-co-don-ma-nam-voi-mot-ban-tay']) }}"
                   class="btn btn-primary btn-readmore">

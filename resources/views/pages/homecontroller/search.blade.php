@@ -1,92 +1,93 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="wrapper">
+  <div class="wrapper">
     <div class="section section-introduce">
-        <div class="container">
-            <div class="introduce-wrap">
-                <div class="menu-category">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5>Danh mục sản phẩm</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="menu-list">
-                            @foreach($categories as $category)
-                                <li class="menu-item">
-                                    <a href="{{ route('shopping.index', ['id' => $category->id, 'alias' => $category->slug]) }}" class="menu-link">{{ $category->name }}</a>
-                                </li>
-                            @endforeach
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="banner">
-                    <ul class="menu-main">
-                        <li class="menu-item">
-                            <a href="{{ route('home') }}" class="menu-link">{{trans('home.Home')}}</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="{{ route('about-rbooks') }}" class="menu-link">{{trans('home.About')}}</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="{{ route('products') }}" class="menu-link">{{trans('home.Products')}}</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="{{ route('recruitment') }}" class="menu-link">{{trans('home.Career')}}</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="{{ route('contact') }}" class="menu-link">{{trans('home.Contact')}}</a>
-                        </li>
-                    </ul>
-                    
-                    <div class="banner-main">
-                        @include('pages.homecontroller.partials.banner')
-                    </div>
-
-                    <div class="banner-thumb">
-                        <div class="item">
-                            <img class="img-fluid icon" src="{{ asset ('/imgs/icon-banner-01.png') }}" alt="">
-                            <div class="content">
-                                <p class="title">MIỄN PHÍ GIAO HÀNG</p>
-                                <p class="des">Hóa đơn trên 300.000 đ</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-fluid icon" src="{{ asset ('/imgs/icon-banner-02.png') }}" alt="">
-                            <div class="content">
-                                <p class="title">BẢO ĐẢM HOÀN TIỀN</p>
-                                <p class="des">Trong vòng 30 ngày</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-fluid icon" src="{{ asset ('/imgs/icon-banner-03.png') }}" alt="">
-                            <div class="content">
-                                <p class="title">THANH TOÁN AN TOÀN</p>
-                                <p class="des">100% Thanh toán an toàn</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-fluid icon" src="{{ asset ('/imgs/icon-banner-04.png') }}" alt="">
-                            <div class="content">
-                                <p class="title">HỖ TRỢ 24/7</p>
-                                <p class="des">Trong giờ hành chính</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="introduce-wrap">
+          <div class="menu-category">
+            <div class="card">
+              <div class="card-header">
+                <h5>Danh mục sản phẩm</h5>
+              </div>
+              <div class="card-body">
+                <ul class="menu-list">
+                  @foreach ($categories as $category)
+                    <li class="menu-item">
+                      <a href="{{ route('shopping.index', ['id' => $category->id, 'alias' => $category->slug]) }}"
+                        class="menu-link">{{ $category->name }}</a>
+                    </li>
+                  @endforeach
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div class="banner">
+            <ul class="menu-main">
+              <li class="menu-item">
+                <a href="{{ route('home') }}" class="menu-link">{{ trans('home.Home') }}</a>
+              </li>
+              <li class="menu-item">
+                <a href="{{ route('about-rbooks') }}" class="menu-link">{{ trans('home.About') }}</a>
+              </li>
+              <li class="menu-item">
+                <a href="{{ route('products') }}" class="menu-link">{{ trans('home.Products') }}</a>
+              </li>
+              {{-- <li class="menu-item">
+                            <a href="{{ route('recruitment') }}" class="menu-link">{{trans('home.Career')}}</a>
+                        </li> --}}
+              <li class="menu-item">
+                <a href="{{ route('contact') }}" class="menu-link">{{ trans('home.Contact') }}</a>
+              </li>
+            </ul>
+
+            <div class="banner-main">
+              @include('pages.homecontroller.partials.banner')
+            </div>
+
+            <div class="banner-thumb">
+              <div class="item">
+                <img class="img-fluid icon" src="{{ asset('/imgs/icon-banner-01.png') }}" alt="">
+                <div class="content">
+                  <p class="title">MIỄN PHÍ GIAO HÀNG</p>
+                  <p class="des">Hóa đơn trên 300.000 đ</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-fluid icon" src="{{ asset('/imgs/icon-banner-02.png') }}" alt="">
+                <div class="content">
+                  <p class="title">BẢO ĐẢM HOÀN TIỀN</p>
+                  <p class="des">Trong vòng 30 ngày</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-fluid icon" src="{{ asset('/imgs/icon-banner-03.png') }}" alt="">
+                <div class="content">
+                  <p class="title">THANH TOÁN AN TOÀN</p>
+                  <p class="des">100% Thanh toán an toàn</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-fluid icon" src="{{ asset('/imgs/icon-banner-04.png') }}" alt="">
+                <div class="content">
+                  <p class="title">HỖ TRỢ 24/7</p>
+                  <p class="des">Trong giờ hành chính</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="section section-product">
-        <div class="container">
-            <div class="product-main">
-                <h2 class="title">Sản phẩm</h2>
-                <div class="filter">
-                    <div>
-                    {{-- @php
+      <div class="container">
+        <div class="product-main">
+          <h2 class="title">Sản phẩm</h2>
+          <div class="filter">
+            <div>
+              {{-- @php
                         $top_seller = "";
                         if(strpos(url()->full(), 'top_seller') == false) {
                             $top_seller = "?keyword=".Request::query('keyword')."&top_seller=1";
@@ -112,73 +113,67 @@
                             <a href="?keyword={{ Request::query('keyword') }}&price_desc=4" class="menu-link {{ Request::query('price_desc') == 4 ? 'active' : '' }}">Giá cao</a>
                         </li>
                     </ul> --}}
-                </div>
-
-                    @if (count($products2) == 0 || $keyword == null )
-                    
-                    @if (count($products1) == 0 || $keyword == null)
-                    <div>
-                    <p> Hổng có gì hết chơn. (>_<)</p>
-                    <p> Xin lũi nhaa. (T_T)</p>
-                    <p> Tìm cái khác ik nè. (◠‿◠)</p>
-                    </div>
-                    @else
-                    <div class="card-body">
-                        <div class="product vertical">                        
-                                @foreach($products1 as $product)
-                                    @include('pages.homecontroller.product-a-page')
-                                @endforeach                  
-                        </div>
-                    </div>
-                    @if($products1->lastPage() > 1)
-                    <div class="pagination-container">
-                        <div class="center-pagination">
-                            <nav aria-label="Page navigation example">
-                            <!-- <ul class="pagination pagination-sm pt-2"> -->
-                        {{ 
-                            $products1->appends(request()->query())->links("pagination::bootstrap-4") 
-                        }}
-                        <!-- </ul> -->
-                            </nav>
-                        </div>
-                    </div>
-                    @endif
-                    @endif
-                    @else
-                    <div class="card-body">
-                        <div class="product vertical">                        
-                                @foreach($products2 as $product)
-                                    @include('pages.homecontroller.product-a-page')
-                                @endforeach                  
-                        </div>
-                    </div>
-                    @if($products2->lastPage() > 1)
-                    <div class="pagination-container">
-                        <div class="center-pagination">
-                            <nav aria-label="Page navigation example">
-                            <!-- <ul class="pagination pagination-sm pt-2"> -->
-                        {{ 
-                            $products2->appends(request()->query())->links("pagination::bootstrap-4") 
-                        }}
-                        <!-- </ul> -->
-                            </nav>
-                        </div>
-                    </div>
-                    @endif  
-                    @endif
-                   
-               
-                    
-        
-               
-                    
-                </div>
             </div>
-        </div>
-    </div>
-</div>
 
-{{-- <div id="main-content" style="display: none;">
+            @if (count($products2) == 0 || $keyword == null)
+
+              @if (count($products1) == 0 || $keyword == null)
+                <div>
+                  <p class="text-center">Không tìm thấy kết quả</p>
+                </div>
+              @else
+                <div class="card-body">
+                  <div class="product vertical">
+                    @foreach ($products1 as $product)
+                      @include('pages.homecontroller.product-a-page')
+                    @endforeach
+                  </div>
+                </div>
+                @if ($products1->lastPage() > 1)
+                  <div class="pagination-container">
+                    <div class="center-pagination">
+                      <nav aria-label="Page navigation example">
+                        <!-- <ul class="pagination pagination-sm pt-2"> -->
+                        {{ $products1->appends(request()->query())->links('pagination::bootstrap-4') }}
+                        <!-- </ul> -->
+                      </nav>
+                    </div>
+                  </div>
+                @endif
+              @endif
+            @else
+              <div class="card-body">
+                <div class="product vertical">
+                  @foreach ($products2 as $product)
+                    @include('pages.homecontroller.product-a-page')
+                  @endforeach
+                </div>
+              </div>
+              @if ($products2->lastPage() > 1)
+                <div class="pagination-container">
+                  <div class="center-pagination">
+                    <nav aria-label="Page navigation example">
+                      <!-- <ul class="pagination pagination-sm pt-2"> -->
+                      {{ $products2->appends(request()->query())->links('pagination::bootstrap-4') }}
+                      <!-- </ul> -->
+                    </nav>
+                  </div>
+                </div>
+              @endif
+            @endif
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{-- <div id="main-content" style="display: none;">
     <div class="container" id="main-category">
         <div class="row no-gutters">
             <!-- Menu left -->
@@ -186,12 +181,12 @@
                 <div id="category-menu" class="widget-block">
                     <h3>{{ trans('home.DANH MỤC') }}<span class="icon-down-category"><i class="fas fa-angle-down"></i></span></h3>
                     <ul class="list-unstyled widget-list-link widget-list-link-category">
-                        @if($locale == "vi" || $locale == "")
-                        @foreach($categories as $category)
+                        @if ($locale == 'vi' || $locale == '')
+                        @foreach ($categories as $category)
                         <li><a href="{{ route('shopping.index', ['id' => $category->id, 'alias' => $category->slug]) }}">{{ $category->name }}</a></li>
                         @endforeach
                         @else
-                            @foreach($categories as $category)
+                            @foreach ($categories as $category)
                                 <li><a href="{{ route('shopping.index', ['id' => $category->id, 'alias' => $category->slug]) }}">{{ $category->nameEnglish }}</a></li>
                             @endforeach
                         @endif
@@ -215,7 +210,7 @@
                 <div id="publisher" class="widget-block">
                     <h3>{{ trans('home.NHÀ PHÁT HÀNH') }}<span class="icon-down-publisher"><i class="fas fa-angle-down"></i></span></h3>
                     <ul class="list-unstyled widget-list-link widget-list-link-publisher">
-                        @foreach($publishers as $publisher)
+                        @foreach ($publishers as $publisher)
                         <li><a href="{{ route('publisher.index', ['alias' => $publisher->publisher]) }}">{{ $publisher->publisher }}</a></li>
                         @endforeach
                     </ul>
@@ -265,7 +260,7 @@
 
                 <!-- Books -->
                 <div class="row category-books-row">
-                    @foreach($data as $product)
+                    @foreach ($data as $product)
                     <div class="col-lg-3 col-md-3 col-6 category-books">
                         @include('pages.homecontroller.product-a-page')
                     </div>
@@ -274,7 +269,7 @@
                 <!-- /Books -->
 
                 <!-- Pagination -->
-                @if($data->lastPage() > 1)
+                @if ($data->lastPage() > 1)
                 <div class="pagination-container text-center border-top">
                     <div class="center-pagination">
                         <nav aria-label="Page navigation example">
@@ -301,24 +296,22 @@
 
 
 @section('script')
-
-<script>
-    $(function(){
-        var width = $(window).width();
-        if (width < 576){
-            $('.widget-list-link-category').hide();
-            $('.widget-list-link-publisher').hide();
-            $('#category-menu h3').click(function() {
-                $('.widget-list-link-category').slideToggle(1000, 0);
-            })
-            $('#publisher h3').click(function() {
-                $('.widget-list-link-publisher').slideToggle(1000, 0);
-            })
-        }
-        $('.default').click(function() {
-            $('.category-filter-moblie-item').slideDown(1000, 0);
+  <script>
+    $(function() {
+      var width = $(window).width();
+      if (width < 576) {
+        $('.widget-list-link-category').hide();
+        $('.widget-list-link-publisher').hide();
+        $('#category-menu h3').click(function() {
+          $('.widget-list-link-category').slideToggle(1000, 0);
         })
+        $('#publisher h3').click(function() {
+          $('.widget-list-link-publisher').slideToggle(1000, 0);
+        })
+      }
+      $('.default').click(function() {
+        $('.category-filter-moblie-item').slideDown(1000, 0);
+      })
     });
-</script>
-
+  </script>
 @endsection
