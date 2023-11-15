@@ -84,6 +84,7 @@ $(function () {
       },
       1200: {
         items: 3,
+        margin: 37,
       },
     },
   });

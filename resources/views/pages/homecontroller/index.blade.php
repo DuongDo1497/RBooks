@@ -8,7 +8,7 @@
           <div class="menu-category">
             <div class="card">
               <div class="card-header">
-                <h5>Danh mục sản phẩm</h5>
+                <h5>{{ trans('home.Danh mục sản phẩm') }}</h5>
               </div>
               <div class="card-body">
                 <ul class="menu-list">
@@ -26,13 +26,13 @@
           <div class="banner">
             <ul class="menu-main">
               <li class="menu-item">
-                <a href="{{ route('home') }}" class="menu-link">{{ trans('home.Home') }}</a>
+                <a href="{{ route('home') }}" class="menu-link">{{ trans('home.Trang chủ') }}</a>
               </li>
               <li class="menu-item">
-                <a href="{{ route('about-rbooks') }}" class="menu-link">{{ trans('home.About') }}</a>
+                <a href="{{ route('about-rbooks') }}" class="menu-link">{{ trans('home.Giới thiệu') }}</a>
               </li>
               <li class="menu-item">
-                <a href="{{ route('products') }}" class="menu-link">{{ trans('home.Books') }}</a>
+                <a href="{{ route('products') }}" class="menu-link">{{ trans('home.Sản phẩm') }}</a>
               </li>
               {{-- <li class="menu-item">
                 <a href="{{ route('paper') }}" class="menu-link">{{ trans('home.Paper') }}</a>
@@ -41,7 +41,7 @@
                 <a href="{{ route('recruitment') }}" class="menu-link">{{ trans('home.Career') }}</a>
               </li> --}}
               <li class="menu-item">
-                <a href="{{ route('contact') }}" class="menu-link">{{ trans('home.Contact') }}</a>
+                <a href="{{ route('contact') }}" class="menu-link">{{ trans('home.Liên hệ') }}</a>
               </li>
             </ul>
 
@@ -53,29 +53,29 @@
               <div class="item">
                 <img class="img-fluid icon" src="{{ 'imgs/icon-banner-01.png' }}" alt="">
                 <div class="content">
-                  <p class="title">MIỄN PHÍ GIAO HÀNG</p>
-                  <p class="des">Hóa đơn trên 300.000 đ</p>
+                  <p class="title">{{ trans('home.MIỄN PHÍ GIAO HÀNG') }}</p>
+                  <p class="des">{{ trans('home.Hóa đơn trên 300.000 đ') }}</p>
                 </div>
               </div>
               <div class="item">
                 <img class="img-fluid icon" src="{{ 'imgs/icon-banner-02.png' }}" alt="">
                 <div class="content">
-                  <p class="title">BẢO ĐẢM HOÀN TIỀN</p>
-                  <p class="des">Trong vòng 30 ngày</p>
+                  <p class="title">{{ trans('home.BẢO ĐẢM HOÀN TIỀN') }}</p>
+                  <p class="des">{{ trans('home.Trong vòng 30 ngày') }}</p>
                 </div>
               </div>
               <div class="item">
                 <img class="img-fluid icon" src="{{ 'imgs/icon-banner-03.png' }}" alt="">
                 <div class="content">
-                  <p class="title">THANH TOÁN AN TOÀN</p>
-                  <p class="des">100% Thanh toán an toàn</p>
+                  <p class="title">{{ trans('home.THANH TOÁN AN TOÀN') }}</p>
+                  <p class="des">{{ trans('home.100% Thanh toán an toàn') }}</p>
                 </div>
               </div>
               <div class="item">
                 <img class="img-fluid icon" src="{{ 'imgs/icon-banner-04.png' }}" alt="">
                 <div class="content">
-                  <p class="title">HỖ TRỢ 24/7</p>
-                  <p class="des">Trong giờ hành chính</p>
+                  <p class="title">{{ trans('home.HỖ TRỢ 24/7') }}</p>
+                  <p class="des">{{ trans('home.Trong giờ hành chính') }}</p>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
               <div class="special-books">
                 <div class="card">
                   <div class="card-header">
-                    <h5 class="title">Sách đặc biệt</h5>
+                    <h5 class="title">{{ trans('home.Sách đặc biệt') }}</h5>
                   </div>
                   <div class="card-body">
                     <div class="product horizontal">
@@ -134,19 +134,20 @@
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                      type="button" role="tab" aria-controls="pills-home" aria-selected="true">Top sách hot</button>
+                      type="button" role="tab" aria-controls="pills-home"
+                      aria-selected="true">{{ trans('home.Top sách hot') }}</button>
                   </li>
 
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                      aria-selected="false">Combo hot</button>
+                      aria-selected="false">{{ trans('home.Combo hot') }}</button>
                   </li>
 
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                      aria-selected="false">Top sách khuyến mãi</button>
+                      aria-selected="false">{{ trans('home.Top sách khuyến mãi') }}</button>
                   </li>
                 </ul>
 
@@ -212,16 +213,16 @@
             <div class="col-xxl-4">
               <div class="promotion-hot">
                 <!-- <img class="img-fluid" src="{{ empty($productOneSale->images->last()) ? asset(RBOOKS_NO_IMAGE_URL) : RBOOKS_IMAGE_URL . $productOneSale->images->last()->path }}" alt="">
-                                        <div class="content">
-                                            <h3 class="small-title">{{ $productOneSale->author }}</h3>
-                                            <h2 class="title">{{ $productOneSale->name }} - <span class="percent">{{ round(100 - ($productOneSale->sale_price / $productOneSale->cover_price) * 100, 0) }}%</span></h2>
-                                            <p class="des">{{ date_format($productOneSale->created_at, 'Y') }}</p>
-                                            <a href="{{ route('product.index', ['id' => $productOneSale->id, 'alias' => $productOneSale->slug]) }}" class="btn btn-primary">Xem chi tiết</a>
-                                        </div> -->
+                                              <div class="content">
+                                                  <h3 class="small-title">{{ $productOneSale->author }}</h3>
+                                                  <h2 class="title">{{ $productOneSale->name }} - <span class="percent">{{ round(100 - ($productOneSale->sale_price / $productOneSale->cover_price) * 100, 0) }}%</span></h2>
+                                                  <p class="des">{{ date_format($productOneSale->created_at, 'Y') }}</p>
+                                                  <a href="{{ route('product.index', ['id' => $productOneSale->id, 'alias' => $productOneSale->slug]) }}" class="btn btn-primary">Xem chi tiết</a>
+                                              </div> -->
                 <img class="img-fluid" src="{{ asset('imgs/promotion-hot.jpg') }}" alt="">
                 <a href="{{ route('product.index', ['id' => '97', 'alias' => 'combo-nguoi-tre-voi-co-don-toi-da-yeu-nguoi-am-tham-nhu-the-dung-vi-co-don-ma-nam-voi-mot-ban-tay']) }}"
                   class="btn btn-primary btn-readmore">
-                  <span class="text">Xem chi tiết</span>
+                  <span class="text">{{ trans('home.Xem chi tiết') }}</span>
                   <span class="icon">
                     <i class="fa-solid fa-angles-right"></i>
                   </span>
@@ -232,7 +233,7 @@
               <div class="product-carousel">
                 <div class="card">
                   <div class="card-header">
-                    <h5 class="title">Top sách combo hot</h5>
+                    <h5 class="title">{{ trans('home.Top sách combo hot') }}</h5>
                   </div>
                   <div class="card-body">
                     <div class="owl-carousel owl-theme product product-carousel-list vertical flex-nowrap">
@@ -292,7 +293,7 @@
               <div class="product-carousel">
                 <div class="card">
                   <div class="card-header">
-                    <h5 class="title">Sách sắp phát hành</h5>
+                    <h5 class="title">{{ trans('home.Sách sắp phát hành') }}</h5>
                   </div>
                   <div class="card-body">
                     <div class="owl-carousel owl-theme product product-hot-list vertical flex-nowrap">

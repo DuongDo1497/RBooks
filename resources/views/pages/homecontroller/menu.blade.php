@@ -5,13 +5,13 @@
 
   <ul class="menu-default">
     <li class="menu-item">
-      <a href="{{ route('home') }}" class="menu-link">{{ trans('home.Home') }}</a>
+      <a href="{{ route('home') }}" class="menu-link">{{ trans('home.Trang chủ') }}</a>
     </li>
     <li class="menu-item">
-      <a href="{{ route('about-rbooks') }}" class="menu-link">{{ trans('home.About') }}</a>
+      <a href="{{ route('about-rbooks') }}" class="menu-link">{{ trans('home.Giới thiệu') }}</a>
     </li>
     <li class="menu-item">
-      <a href="{{ route('products') }}" class="menu-link">{{ trans('home.Books') }}</a>
+      <a href="{{ route('products') }}" class="menu-link">{{ trans('home.Sản phẩm') }}</a>
     </li>
     {{-- <li class="menu-item">
             <a href="{{ route('paper') }}" class="menu-link">{{trans('home.Paper')}}</a>
@@ -20,7 +20,7 @@
             <a href="{{ route('recruitment') }}" class="menu-link">{{trans('home.Career')}}</a>
         </li> --}}
     <li class="menu-item">
-      <a href="{{ route('contact') }}" class="menu-link">{{ trans('home.Contact') }}</a>
+      <a href="{{ route('contact') }}" class="menu-link">{{ trans('home.Liên hệ') }}</a>
     </li>
   </ul>
 </div>
