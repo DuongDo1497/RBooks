@@ -94,10 +94,18 @@ return [
 	'Viết nhận xét' => 'Viết nhận xét',
 	'Sách cùng chủ đề' => 'Sách cùng chủ đề',
 	'Sách bán chạy' => 'Sách bán chạy',
-	'' => '',
-	'' => '',
-	'' => '',
 	// Products Detail
+
+	// Contact
+	'Liên hệ với chúng tôi' => 'Liên hệ với chúng tôi',
+	'Họ và tên' => 'Họ và tên',
+	'Số điện thoại' => 'Số điện thoại',
+	'Nội dung tin nhắn' => 'Nội dung tin nhắn',
+	'Gửi' => 'Gửi',
+	'Thứ 2 - Thứ 6' => 'Thứ 2 - Thứ 6',
+	'Thứ 7' => 'Thứ 7',
+	'Chủ nhật nghỉ' => 'Chủ nhật nghỉ',
+	// Contact
 
 	// Footer
 	'Địa chỉ: LM81-42.OT04 (Officetel), Tòa Landmark 81 Vinhomes Central Park, Số 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam' => 'Địa chỉ: LM81-42.OT04 (Officetel), Tòa Landmark 81 Vinhomes Central Park, Số 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam',
@@ -112,6 +120,157 @@ return [
 	'Chứng nhận bởi' => 'Chứng nhận bởi',
 	'Kết nối với chúng tôi' => 'Kết nối với chúng tôi',
 	// Footer
+
+	// Login
+	'Đăng nhập' => 'Đăng nhập',
+	'Tên tài khoản/Email' => 'Tên tài khoản/Email',
+	'Sai tài khoản hoặc email hoặc mật khẩu' => 'Sai tài khoản hoặc email hoặc mật khẩu',
+	'Mật khẩu' => 'Mật khẩu',
+	'Quên mật khẩu?' => 'Quên mật khẩu?',
+	'Đăng ký' => 'Đăng ký',
+	// Login
+
+	// Register
+	'Xác nhận mật khẩu' => 'Xác nhận mật khẩu',
+	// Register
+
+	// Dashboard Small Customer
+	'Chỉnh sửa thông tin cá nhân' => 'Chỉnh sửa thông tin cá nhân',
+	'Danh sách đơn hàng' => 'Danh sách đơn hàng',
+	'Cài đặt tài khoản' => 'Cài đặt tài khoản',
+	'Thoát' => 'Thoát',
+	// Dashboard Small Customer
+
+	// Customer Sidebar Left
+	'Tài khoản của' => 'Tài khoản của',
+	'Tài khoản của tôi' => 'Tài khoản của tôi',
+	'Thông tin' => 'Thông tin',
+	'Địa chỉ' => 'Địa chỉ',
+	'Đổi mật khẩu' => 'Đổi mật khẩu',
+	'Thông báo của tôi' => 'Thông báo của tôi',
+	'Quản lý đơn hàng' => 'Quản lý đơn hàng',
+	'Sản phẩm đã mua' => 'Sản phẩm đã mua',
+	'Sản phẩm đã xem' => 'Sản phẩm đã xem',
+	'Sản phẩm yêu thích' => 'Sản phẩm yêu thích',
+	// Customer Sidebar Left
+
+	// Customer infomation
+	'Thông tin của tôi' => 'Thông tin của tôi',
+	'Quản lý thông tin để bảo mật tài khoản' => 'Quản lý thông tin để bảo mật tài khoản',
+	'Nhập họ và tên' => 'Nhập họ và tên',
+	'Giới tính' => 'Giới tính',
+	'Nam' => 'Nam',
+	'Nữ' => 'Nữ',
+	'Ngày sinh' => 'Ngày sinh',
+	'Thay đổi' => 'Thay đổi',
+	'Tên công ty' => 'Tên công ty',
+	'Nhập tên công ty' => 'Nhập tên công ty',
+	'Địa chỉ công ty' => 'Địa chỉ công ty',
+	'Nhập địa chỉ công ty' => 'Nhập địa chỉ công ty',
+	'Mã số thuế' => 'Mã số thuế',
+	'Nhập mã số thuế' => 'Nhập mã số thuế',
+	'Lưu' => 'Lưu',
+	// Customer infomation
+
+	// Customer address
+	'Địa chỉ của tôi' => 'Địa chỉ của tôi',
+	'THÊM ĐỊA CHỈ MỚI' => 'THÊM ĐỊA CHỈ MỚI',
+	'Thêm địa chỉ mới' => 'Thêm địa chỉ mới',
+	'Tỉnh/Thành phố' => 'Tỉnh/Thành phố',
+	'Quận/Huyện' => 'Quận/Huyện',
+	'Phường/Xã' => 'Phường/Xã',
+	'Địa chỉ cụ thể' => 'Địa chỉ cụ thể',
+	'Đặt làm địa chỉ mặc định' => 'Đặt làm địa chỉ mặc định',
+	'Văn phòng' => 'Văn phòng',
+	'Nhà riêng' => 'Nhà riêng',
+	'Quay lại' => 'Quay lại',
+	// Customer address
+
+	// Customer change password
+	'Để bảo mật tài khoản , vui lòng không chia sẻ mật khẩu cho người khác' => 'Để bảo mật tài khoản , vui lòng không chia sẻ mật khẩu cho người khác',
+	'Mật khẩu mới' => 'Mật khẩu mới',
+	'Xác nhận mật khẩu' => 'Xác nhận mật khẩu',
+	'Mật khẩu hiện tại' => 'Mật khẩu hiện tại',
+	'Xác nhận' => 'Xác nhận',
+	// Customer change password
+
+	// Customer notification
+	'Thông báo của tôi' => 'Thông báo của tôi',
+	'Đánh giá sản phẩm' => 'Đánh giá sản phẩm',
+	// Customer notification
+
+	// Customer order
+	'Quản lý đơn hàng' => 'Quản lý đơn hàng',
+	'Mã đơn hàng' => 'Mã đơn hàng',
+	'Ngày mua' => 'Ngày mua',
+	'PT thanh toán' => 'PT thanh toán',
+	'Tổng tiền' => 'Tổng tiền',
+	'Trạng thái' => 'Trạng thái',
+	'COD' => 'COD',
+	'Chuyển khoản ngân hàng' => 'Chuyển khoản ngân hàng',
+	'Đang soạn hàng' => 'Đang soạn hàng',
+	'Đang vận chuyển' => 'Đang vận chuyển',
+	'Giao hàng thành công' => 'Giao hàng thành công',
+	'Hủy đơn hàng' => 'Hủy đơn hàng',
+	// Customer order
+
+	// Customer product view
+	'Sản phẩm bạn đã xem' => 'Sản phẩm bạn đã xem',
+	// Customer product view
+
+	// Cart
+	'Đơn giá' => 'Đơn giá',
+	'Thành tiền' => 'Thành tiền',
+	'Xóa tất cả' => 'Xóa tất cả',
+	'Giá giảm' => 'Giá giảm',
+	'Giao tới' => 'Giao tới',
+	'Thông tin đơn hàng' => 'Thông tin đơn hàng',
+	'Tạm tính' => 'Tạm tính',
+	'Tiết kiệm' => 'Tiết kiệm',
+	'Tiếp tục mua hàng' => 'Tiếp tục mua hàng',
+	'Thanh toán' => 'Thanh toán',
+	// Cart
+
+	// Shipping method
+	'BƯỚC 2: ĐỊA CHỈ GIAO HÀNG' => 'BƯỚC 2: ĐỊA CHỈ GIAO HÀNG',
+	'Chọn địa chỉ giao hàng có sẵn bên dưới' => 'Chọn địa chỉ giao hàng có sẵn bên dưới',
+	'Bạn muốn giao hàng đến địa chỉ khác?' => 'Bạn muốn giao hàng đến địa chỉ khác?',
+	'Giao đến địa chỉ này' => 'Giao đến địa chỉ này',
+	'Sửa' => 'Sửa',
+	'Thêm địa chỉ giao hàng mới' => 'Thêm địa chỉ giao hàng mới',
+	'Điện thoại' => 'Điện thoại',
+	// Shipping method
+
+	// Order and payment
+	'BƯỚC 3: ĐẶT MUA VÀ THANH TOÁN' => 'BƯỚC 3: ĐẶT MUA VÀ THANH TOÁN',
+	'Chọn hình thức giao hàng' => 'Chọn hình thức giao hàng',
+	'Giao hàng tiêu chuẩn' => 'Giao hàng tiêu chuẩn',
+	'Giao hàng nhanh' => 'Giao hàng nhanh',
+	'Giao hàng Vinhomes Central Park' => 'Giao hàng Vinhomes Central Park',
+	'Chọn hình thức thanh toán' => 'Chọn hình thức thanh toán',
+	'Thanh toán tiền mặt khi nhận hàng' => 'Thanh toán tiền mặt khi nhận hàng',
+	'Thanh toán bằng chuyển khoản ngân hàng' => 'Thanh toán bằng chuyển khoản ngân hàng',
+	'Thanh toán qua ngân lượng' => 'Thanh toán qua ngân lượng',
+	'Thông tin xuất hóa đơn VAT' => 'Thông tin xuất hóa đơn VAT',
+	'Ít nhất 2 từ' => 'Ít nhất 2 từ',
+	'Nhập địa chỉ công ty( Bao gồm Phường/Xã, Quận/Huyện, Tỉnh/Thành phố nếu có)' => 'Nhập địa chỉ công ty( Bao gồm Phường/Xã, Quận/Huyện, Tỉnh/Thành phố nếu có)',
+	'Gửi quà tặng đến bạn bè, người thân' => 'Gửi quà tặng đến bạn bè, người thân',
+	'Thông tin quà tặng' => 'Thông tin quà tặng',
+	'Thiệp mừng + Gói quà' => 'Thiệp mừng + Gói quà',
+	'Thiệp mừng được chọn ngẫu nhiên trong 100 mẫu do RBooks thiết kế.' => 'Thiệp mừng được chọn ngẫu nhiên trong 100 mẫu do RBooks thiết kế.',
+	'Gửi từ' => 'Gửi từ',
+	'Địa chỉ người nhận' => 'Địa chỉ người nhận',
+	'Số điện thoại người nhận' => 'Số điện thoại người nhận',
+	'Lời nhắn' => 'Lời nhắn',
+	'Ví dụ: Chúc mừng sinh nhật bạn. (Tối đa 500 ký tự)' => 'Ví dụ: Chúc mừng sinh nhật bạn. (Tối đa 500 ký tự)',
+	'phường' => 'phường',
+	'quận' => 'quận',
+	'Mã giảm giá / Quà tặng' => 'Mã giảm giá / Quà tặng',
+	'Áp dụng' => 'Áp dụng',
+	'Tên người gửi' => 'Tên người gửi',
+	'Tên người nhận' => 'Tên người nhận',
+	'' => '',
+	// Order and payment
 
 	'lang' => [
 		'en' => 'English',

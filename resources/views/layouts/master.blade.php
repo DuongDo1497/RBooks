@@ -121,27 +121,28 @@
                   <div class="info">
                     <p class="name">{{ Auth::user()->name }}</p>
                     <p class="email">{{ Auth::user()->email }}</p>
-                    <a href="{{ route('customer') }}" class="btn btn-primary edit">Chỉnh sửa thông tin cá nhân</a>
+                    <a href="{{ route('customer') }}"
+                      class="btn btn-primary edit">{{ trans('home.Chỉnh sửa thông tin cá nhân') }}</a>
                   </div>
                 </div>
                 <ul class="dashboard-small-list">
                   <li class="menu-item">
                     <a href="{{ route('customer-order') }}" class="menu-link">
                       <span class="icon"><i class="fa-regular fa-rectangle-list"></i></span>
-                      <span class="text">Danh sách đơn hàng</span>
+                      <span class="text">{{ trans('home.Danh sách đơn hàng') }}</span>
                     </a>
                   </li>
                   <li class="menu-item">
                     <a href="{{ route('customer-addresses') }}" class="menu-link">
                       <span class="icon"><i class="fa-solid fa-gears"></i></span>
-                      <span class="text">Cài đặt tài khoản</span>
+                      <span class="text">{{ trans('home.Cài đặt tài khoản') }}</span>
                     </a>
                   </li>
                   <li class="menu-item">
                     <a href="{{ route('logout') }}" class="menu-link"
                       onclick="event.preventDefault();document.getElementById('logout-form').submit(); ">
                       <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
-                      <span class="text">Thoát</span>
+                      <span class="text">{{ trans('home.Thoát') }}</span>
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                       </form>

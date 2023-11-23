@@ -75,35 +75,43 @@ return [
 	'Số lượng' => 'Quantity',
 	'Thêm giỏ hàng' => 'Add to Cart',
 	'ĐẶT TRƯỚC' => 'RESERVE',
-	'Dịch vụ & Khuyến mãi kèm theo' => 'Services & Promotions included',
-	'Áp dụng cho các sản phẩm sách RBooks' => 'Applicable to RBooks book products',
-	'Miễn phí giao hàng toàn quốc' => 'Free delivery nationwide',
-	'Đơn hàng 300.000 đ' => 'Order 300.000 đ',
-	'Trải nghiệm dịch vụ Bookcare' => 'Experience the Bookcare service',
-	'Bọc sách Plastic cao cấp' => 'High quality plastic book cover',
+	'Dịch vụ & Khuyến mãi kèm theo' => 'Services & Promotions Included',
+	'Áp dụng cho các sản phẩm sách RBooks' => 'Applied to all RBooks products',
+	'Miễn phí giao hàng toàn quốc' => 'Free Shipping Nationwide',
+	'Đơn hàng 300.000 đ' => 'Order over 300.000 đ',
+	'Trải nghiệm dịch vụ Bookcare' => 'Try out the Bookcare service',
+	'Bọc sách Plastic cao cấp' => 'High-quality plastic book cover',
 	'Dịch vụ' => 'Service',
 	'Gói quà tặng' => 'Gift wrapping',
 	'Mô tả' => 'Description',
-	'Chi tiết sản phẩm' => 'Product detail',
-	'Thông tin chi tiết' => 'Detail infomation',
+	'Chi tiết sản phẩm' => 'Product Specs',
+	'Thông tin chi tiết' => 'Information',
 	'Tác giả' => 'Author',
 	'Kích thước' => 'Size',
-	'Số trang' => 'Number page',
+	'Số trang' => 'Page number',
 	'Loại bìa' => 'Cover type',
-	'Năm xuất bản' => 'Publishing year',
-	'Nhà phát hành' => 'Publisher',
-	'Nhà xuất bản' => 'Publishing company',
+	'Năm xuất bản' => 'Year of Publication',
+	'Nhà phát hành' => 'Publishing company',
+	'Nhà xuất bản' => 'Publisher',
 	'Không có dữ liệu' => 'No data',
-	'Đánh giá' => 'Evaluate',
-	'Đánh giá - Nhận xét từ khách hàng' => 'Evaluate - Reviews from customers',
+	'Đánh giá' => 'Reviews',
+	'Đánh giá - Nhận xét từ khách hàng' => 'Customer Reviews',
 	'nhận xét' => 'review',
 	'Viết nhận xét' => 'Write a review',
-	'Sách cùng chủ đề' => 'Books on the same topic',
-	'Sách bán chạy' => 'Bestseller books',
-	'' => '',
-	'' => '',
-	'' => '',
+	'Sách cùng chủ đề' => 'Same Topic Books',
+	'Sách bán chạy' => 'Bestseller Books',
 	// Products Detail
+
+	// Contact
+	'Liên hệ với chúng tôi' => 'Contact Us',
+	'Họ và tên' => 'Fullname',
+	'Số điện thoại' => 'Phone',
+	'Nội dung tin nhắn' => 'Message',
+	'Gửi' => 'Send',
+	'Thứ 2 - Thứ 6' => 'Monday - Friday',
+	'Thứ 7' => 'Saturday',
+	'Chủ nhật nghỉ' => 'Sunday off',
+	// Contact
 
 	// Footer
 	'Địa chỉ: LM81-42.OT04 (Officetel), Tòa Landmark 81 Vinhomes Central Park, Số 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam' => 'Address: LM81-42.OT04 (Officetel), Landmark Tower 81 Vinhomes Central Park, No. 720A Dien Bien Phu, Ward 22, Binh Thanh District, Ho Chi Minh City, Vietnam',
@@ -118,6 +126,163 @@ return [
 	'Chứng nhận bởi' => 'Certified by',
 	'Kết nối với chúng tôi' => 'Connect with Us',
 	// Footer
+
+	// Login
+	'Đăng nhập' => 'Login',
+	'Tên tài khoản/Email' => 'Account name/Email',
+	'Sai tài khoản hoặc email hoặc mật khẩu' => 'Wrong account or email or password',
+	'Mật khẩu' => 'Password',
+	'Quên mật khẩu?' => 'Forgot password?',
+	'Đăng ký' => 'Register',
+	'' => '',
+	'' => '',
+	// Login
+
+	// Register
+	'Xác nhận mật khẩu' => 'Confirm password',
+	// Register
+
+	// Dashboard Small Customer
+	'Chỉnh sửa thông tin cá nhân' => 'Edit personal information',
+	'Danh sách đơn hàng' => 'List of orders',
+	'Cài đặt tài khoản' => 'Set up account',
+	'Thoát' => 'Close',
+	'' => '',
+	// Dashboard Small Customer
+
+	// Customer Sidebar Left
+	'Tài khoản của' => 'Account of',
+	'Tài khoản của tôi' => 'My account',
+	'Thông tin' => 'Infomation',
+	'Địa chỉ' => 'Address',
+	'Đổi mật khẩu' => 'Change password',
+	'Thông báo của tôi' => 'My notifications',
+	'Quản lý đơn hàng' => 'Order management',
+	'Sản phẩm đã mua' => 'Purchased product',
+	'Sản phẩm đã xem' => 'Viewed products',
+	'Sản phẩm yêu thích' => 'Favorite product',
+	// Customer Sidebar Left
+
+	// Customer infomation
+	'Thông tin của tôi' => 'My infomation',
+	'Quản lý thông tin để bảo mật tài khoản' => 'Manage information for account security',
+	'Nhập họ và tên' => 'Enter fullnamw',
+	'Giới tính' => 'Gender',
+	'Nam' => 'Male',
+	'Nữ' => 'Female',
+	'Ngày sinh' => 'Birthday',
+	'Thay đổi' => 'Change',
+	'Tên công ty' => 'Company name',
+	'Nhập tên công ty' => 'Enter company name',
+	'Địa chỉ công ty' => 'Company Address',
+	'Nhập địa chỉ công ty' => 'Enter company address',
+	'Mã số thuế' => 'Tax ID',
+	'Nhập mã số thuế' => 'Enter tax ID',
+	'Lưu' => 'Save',
+	// Customer infomation
+
+	// Customer address
+	'Địa chỉ của tôi' => 'My address',
+	'THÊM ĐỊA CHỈ MỚI' => 'ADD NEW ADDRESS',
+	'Thêm địa chỉ mới' => 'Add new address',
+	'Tỉnh/Thành phố' => 'Province/City',
+	'Quận/Huyện' => 'District',
+	'Phường/Xã' => 'Wards',
+	'Địa chỉ cụ thể' => 'Specific address',
+	'Đặt làm địa chỉ mặc định' => 'Set as default address',
+	'Văn phòng' => 'Office',
+	'Nhà riêng' => 'Home',
+	'Quay lại' => 'Back',
+	// Customer address
+
+	// Customer change password
+	'Để bảo mật tài khoản , vui lòng không chia sẻ mật khẩu cho người khác' => 'For account security, please do not share your password with others',
+	'Mật khẩu mới' => 'New password',
+	'Xác nhận mật khẩu' => 'Confirm password',
+	'Mật khẩu hiện tại' => 'Current password',
+	'Xác nhận' => 'Accept',
+	// Customer change password
+
+	// Customer notification
+	'Thông báo của tôi' => 'My notification',
+	'Đánh giá sản phẩm' => 'Review product',
+	// Customer notification
+
+	// Customer order
+	'Quản lý đơn hàng' => 'Order management',
+	'Mã đơn hàng' => 'ID order',
+	'Ngày mua' => 'Date of purchase',
+	'PT thanh toán' => 'Payment methods',
+	'Tổng tiền' => 'Total amount',
+	'Trạng thái' => 'Status',
+	'COD' => 'COD',
+	'Chuyển khoản ngân hàng' => 'Bank transfer',
+	'Đang soạn hàng' => 'Preparing goods',
+	'Đang vận chuyển' => 'Being transported',
+	'Giao hàng thành công' => 'Successful delivery',
+	'Hủy đơn hàng' => 'Cancel order',
+	'' => '',
+	// Customer order
+
+	// Customer product view
+	'Sản phẩm bạn đã xem' => 'Products you viewed',
+	// Customer product view
+
+	// Cart
+	'Đơn giá' => 'Unit price',
+	'Thành tiền' => 'Into money',
+	'Xóa tất cả' => 'Delete All',
+	'Giá giảm' => 'Reduced price',
+	'Giao tới' => 'Delivered',
+	'Thông tin đơn hàng' => 'Order infomation',
+	'Tạm tính' => 'Provisional',
+	'Tiết kiệm' => 'Saved',
+	'Tiếp tục mua hàng' => 'Continue shopping',
+	'Thanh toán' => 'Payment',
+	'' => '',
+	// Cart
+
+	// Shipping method
+	'BƯỚC 2: ĐỊA CHỈ GIAO HÀNG' => 'STEP 2: DELIVERY ADDRESS',
+	'Chọn địa chỉ giao hàng có sẵn bên dưới' => 'Select available delivery address below',
+	'Bạn muốn giao hàng đến địa chỉ khác?' => 'Do you want to deliver to another address?',
+	'Giao đến địa chỉ này' => 'Ship to this address',
+	'Sửa' => 'Edit',
+	'Thêm địa chỉ giao hàng mới' => 'Add new delivery address',
+	'Điện thoại' => 'Phone',
+	'' => '',
+	// Shipping method
+
+	// Order and payment
+	'BƯỚC 3: ĐẶT MUA VÀ THANH TOÁN' => 'STEP 3: ORDER AND PAYMENT',
+	'Chọn hình thức giao hàng' => 'Choose delivery method',
+	'Giao hàng tiêu chuẩn' => 'Standard delivery',
+	'Giao hàng nhanh' => 'Fast delivery',
+	'Giao hàng Vinhomes Central Park' => 'Delivery Vinhomes Central Park',
+	'Chọn hình thức thanh toán' => 'Choose payment method',
+	'Thanh toán tiền mặt khi nhận hàng' => 'COD',
+	'Thanh toán bằng chuyển khoản ngân hàng' => 'Payment by bank transfer',
+	'Thanh toán qua ngân lượng' => 'Payment via Ngan luong',
+	'Thông tin xuất hóa đơn VAT' => 'VAT invoice information',
+	'Ít nhất 2 từ' => 'At least 2 words',
+	'Nhập địa chỉ công ty( Bao gồm Phường/Xã, Quận/Huyện, Tỉnh/Thành phố nếu có)' => 'Enter company address (Including Ward/Commune, District/District, Province/City if any)',
+	'Gửi quà tặng đến bạn bè, người thân' => 'Send gifts to friends and relatives',
+	'Thông tin quà tặng' => 'Gift information',
+	'Thiệp mừng + Gói quà' => 'Greeting card + Gift wrapping',
+	'Thiệp mừng được chọn ngẫu nhiên trong 100 mẫu do RBooks thiết kế.' => 'Greeting cards are randomly selected from 100 templates designed by RBooks.',
+	'Gửi từ' => 'Sent from',
+	'Địa chỉ người nhận' => 'Receiver\'s address',
+	'Số điện thoại người nhận' => 'Recipient phone number',
+	'Lời nhắn' => 'Message',
+	'Ví dụ: Chúc mừng sinh nhật bạn. (Tối đa 500 ký tự)' => 'For example: Happy birthday to you. (Maximum 500 characters)',
+	'phường' => 'ward',
+	'quận' => 'district',
+	'Mã giảm giá / Quà tặng' => 'Discount Code / Gift',
+	'Áp dụng' => 'Apply',
+	'Tên người gửi' => 'Sender\'s name',
+	'Tên người nhận' => 'Recipient\'s name',
+	'' => '',
+	// Order and payment
 
 	'lang' => [
 		'en' => 'English',

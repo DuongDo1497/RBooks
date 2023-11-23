@@ -4,32 +4,34 @@
     <div class="container">
       <div class="contact-us">
         <div class="form-contact-us">
-          <h4 class="contact">Liên hệ với chúng tôi</h4>
+          <h4 class="contact">{{ trans('home.Liên hệ với chúng tôi') }}</h4>
           <form class="form-contact-us-customer">
             <div class="name-phone">
-              <input class="name" type="text" name="username" placeholder="Họ và tên" required>
-              <input class="phone" type="phone" name="phone" placeholder="Số điện thoại" pattern="(\+84|0)\d{9}"
-                required>
+              <input class="name" type="text" name="username" placeholder="{{ trans('home.Họ và tên') }}" required>
+              <input class="phone" type="phone" name="phone" placeholder="{{ trans('home.Số điện thoại') }}"
+                pattern="(\+84|0)\d{9}" required>
             </div>
             <input class="email" id="email" type="email" name="email" placeholder="Email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-            <textarea class="message-content" rows="5" type="text" name="message-content" placeholder="Nội dung tin nhắn"
-              required></textarea>
-            <button class="btn-send">Gửi <i class="fa-solid fa-paper-plane"></i></button>
+            <textarea class="message-content" rows="5" type="text" name="message-content"
+              placeholder="{{ trans('home.Nội dung tin nhắn') }}" required></textarea>
+            <button class="btn-send">{{ trans('home.Gửi') }} <i class="fa-solid fa-paper-plane"></i></button>
           </form>
         </div>
         <div class="form-contact-time">
           <div class="form-contact-item calendar">
             <img class="icon-calendar" src="{{ 'imgs/icon-calendar.png' }}" alt="">
             <div class="calendar-timeday">
-              <p class="time">8 AM - 5 PM <b class="day">( Thứ 2 - thứ 6 )</b></p>
-              <p class="time">8 AM - 12 PM <b class="day">( Thứ 7 ) - Chủ nhật nghỉ</b></p>
+              <p class="time">8 AM - 5 PM <b class="day">( {{ trans('home.Thứ 2 - Thứ 6') }} )</b></p>
+              <p class="time">8 AM - 12 PM <b class="day">( {{ trans('home.Thứ 7') }} ) -
+                  {{ trans('home.Chủ nhật nghỉ') }}</b></p>
             </div>
           </div>
           <div class="form-contact-item form-contact-address">
             <i class="fa-solid fa-location-dot"></i>
-            <p class="icon-address-title">LM81 - 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên
-              Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.</p>
+            <p class="icon-address-title">
+              {{ trans('home.LM81 - 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.') }}
+            </p>
           </div>
           <div class="form-contact-item form-contact-email">
             <i class="fa-solid fa-envelope"></i>

@@ -98,17 +98,17 @@ $(function () {
     }
   });
 
-  $(".read-more").text("Đọc thêm nội dung");
+  $(".read-more").text("Read more");
   $(".read-more").click(function () {
     $(".des-wrap").toggleClass("active");
 
     if ($(".des-wrap").hasClass("active")) {
       $(".gradient").hide();
-      $(".read-more").text("Rút gọn nội dung");
+      $(".read-more").text("Shorten content");
       // console.log(1);
     } else {
       $(".gradient").show();
-      $(".read-more").text("Đọc thêm nội dung");
+      $(".read-more").text("Read more");
       // console.log(2);
     }
   });
