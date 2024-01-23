@@ -30,7 +30,7 @@
           <div class="form-contact-item form-contact-address">
             <i class="fa-solid fa-location-dot"></i>
             <p class="icon-address-title">
-              {{ trans('home.LM81 - 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.') }}
+              {{ trans('home.Vinhomes Central Park, 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TP Hồ Chí Minh.') }}
             </p>
           </div>
           <div class="form-contact-item form-contact-email">

@@ -32,7 +32,7 @@ return [
 	// Home
 
 	// About
-	'LM81- 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.' => 'LM81- 42.OT04 (Officetel), Landmark 81 Vinhomes Central Park, 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Tp Hồ Chí Minh.',
+	'Vinhomes Central Park, 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TP Hồ Chí Minh.' => 'Vinhomes Central Park, 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TP Hồ Chí Minh.',
 	'hoặc' => 'hoặc',
 	'Nâng tầm tri thức' => 'Nâng tầm tri thức',
 	'Dựa trên điểm nhấn cuốn sách thể hiện ngọn lửa tri thức, ngọn lửa trí tuệ' => 'Dựa trên điểm nhấn cuốn sách thể hiện ngọn lửa tri thức, ngọn lửa trí tuệ',
@@ -108,7 +108,7 @@ return [
 	// Contact
 
 	// Footer
-	'Địa chỉ: LM81-42.OT04 (Officetel), Tòa Landmark 81 Vinhomes Central Park, Số 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam' => 'Địa chỉ: LM81-42.OT04 (Officetel), Tòa Landmark 81 Vinhomes Central Park, Số 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam',
+	'Địa chỉ: Vinhomes Central Park, 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TP Hồ Chí Minh.' => 'Địa chỉ: Vinhomes Central Park, 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TP Hồ Chí Minh.',
 	'Hotline: 08 4966 4005' => 'Hotline: 08 4966 4005',
 	'Email: info@rbooks.vn' => 'Email: info@rbooks.vn',
 	'Về RBooks' => 'Về RBooks',

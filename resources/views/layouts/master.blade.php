@@ -173,7 +173,7 @@
             <div class="content">
               <p class="text">
                 <img class="img-fluid" src="{{ asset('/imgs/icon-location.svg') }}" alt="">
-                {{ trans('home.Địa chỉ: LM81-42.OT04 (Officetel), Tòa Landmark 81 Vinhomes Central Park, Số 720A Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam') }}
+                {{ trans('home.Địa chỉ: Vinhomes Central Park, 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TP Hồ Chí Minh.') }}
               </p>
               <p class="text">
                 <img class="img-fluid" src="{{ asset('/imgs/icon-telephone.svg') }}" alt="">
