@@ -13,9 +13,9 @@
       href="http://rbooks.vn/resources/views/pages/shopping/p111/bo-sach-chua-lanh-3-cuon-chua-lanh-tam-tri-truong-thanh-nao-khong-don-dau-chua-lanh-co-the-yeu-co-the-mot-chut-doi-ve-vang-nhieu-phan-chua-lanh-loi-song-thay-loi-song-doi-cuoc-doi.html"><img
         src="{{ asset('imgs/banners/banner39.jpg') }}" class="img-fluid"></a></div>
 
-  <div class="item"><a
+  {{-- <div class="item"><a
       href="http://rbooks.vn/resources/views/pages/shopping/p113/bo-sach-mike-omer-va-hanh-trinh-khac-hoa-tam-ly-toi-pham-cua-zoe-bentley.html"><img
-        src="{{ asset('imgs/banners/banner40.jpg') }}" class="img-fluid"></a></div>
+        src="{{ asset('imgs/banners/banner40.jpg') }}" class="img-fluid"></a></div> --}}
 
   <div class="item"><a
       href="http://rbooks.vn/resources/views/pages/shopping/p101/thoat-bay-tam-ly-giao-dich-trong-chung-khoan-gong-loi-khong-gong-lo-tang-kem-bookmark.html"><img

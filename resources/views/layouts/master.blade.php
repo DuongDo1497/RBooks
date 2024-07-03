@@ -229,11 +229,11 @@
             </h4>
 
             <div class="footerTop-social">
-              <div class="fb-page" data-href="https://www.facebook.com/rbooks.songbanlinh" data-tabs="events"
+              <div class="fb-page" data-href="https://www.facebook.com/rbooks.doanhnghiep" data-tabs="events"
                 data-width="320" data-height="" data-small-header="false" data-adapt-container-width="true"
                 data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/rbooks.songbanlinh" class="fb-xfbml-parse-ignore"><a
-                    href="https://www.facebook.com/rbooks.songbanlinh">Sách RBooks</a></blockquote>
+                <blockquote cite="https://www.facebook.com/rbooks.doanhnghiep" class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/rbooks.doanhnghiep">Sách RBooks</a></blockquote>
               </div>
             </div>
 
