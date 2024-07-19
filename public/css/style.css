@@ -502,8 +502,8 @@ h5 {
   color: #000;
 }
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .section-account .account-wrap .row{
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .section-account .account-wrap .row {
     row-gap: 3.6rem;
   }
 }
