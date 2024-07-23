@@ -628,6 +628,18 @@ h5 {
   display: inline-block;
 }
 
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .footerTop .item:first-child {
+    width: calc(30% - 20px);
+  }
+
+  .footerTop .item:nth-child(2),
+  .footerTop .item:nth-child(3),
+  .footerTop .item:last-child {
+    width: calc(calc(70% / 3) - 20px);
+  }
+}
+
 @media (max-width: 575.98px) {
   .footerTop-main {
     flex-wrap: wrap;

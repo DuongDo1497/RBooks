@@ -34,23 +34,23 @@ return [
 	// About
 	'Vinhomes Central Park, 720A Điện Biên Phủ, phường 22, quận Bình Thạnh, TP Hồ Chí Minh.' => 'Vinhomes Central Park, 720A Dien Bien Phu, Ward 22, Binh Thanh District, Ho Chi Minh City, Vietnam.',
 	'hoặc' => 'or',
-	'Nâng tầm tri thức' => 'Gain Knowledge Grow Value',
-	'Dựa trên điểm nhấn cuốn sách thể hiện ngọn lửa tri thức, ngọn lửa trí tuệ' => 'With the emphasis on knowledge, our books represent the burning flames of knowledge and wisdom.',
-	'Logo RBooks thể hiện là một biểu tượng hạt giống tri thức đang nảy mầm mang đến niềm tin, kiến thức và cơ hội thay đổi cuộc đời cho mỗi độc giả Việt Nam.' => 'RBooks logo represents a symbol of sprouting seeds of knowledge, invoking trust in our business and offering knowledge and life-changing opportunities to every Vietnamese reader.',
+	'Giá trị còn mãi' => 'Timeless value',
+	'Dựa trên điểm nhấn cuốn sách thể hiện ngọn lửa tri thức, ngọn lửa trí tuệ.' => 'We are dedicated to igniting the flame of knowledge and wisdom.',
+	'Logo RBooks thể hiện là một biểu tượng hạt giống tri thức đang nảy mầm mang đến niềm tin, kiến thức và cơ hội thay đổi cuộc đời của Tác giả và Độc giả.' => 'Our logo symbolizes a seed of knowledge sprouting, bringing faith, knowledge, and opportunitiesto change the lives of both authors and readers.',
 	'Tầm nhìn' => 'Vision',
-	'Trở thành công ty sách dẫn đầu về lĩnh vực Tài chính cá nhân tại Việt Nam.' => 'Become the leading book company in the field of Personal Finance in Vietnam.',
+	'Trở thành công ty sách dẫn đầu tại Châu Á về việc đưa sách các Tác giả thành sách Best Seller trên thị trường quốc tế.' => 'Our vision is to become the leading book company in Asia, renowned for turning ourauthors works into international bestsellers.',
 	'Sứ mệnh' => 'Mission',
-	'RBooks mang hạt giống tri thức, trí tuệ của nhân loại đến độc giả Việt Nam và Quốc Tế.' => 'RBooks takes pride in bringing the seeds of knowledge and wisdom of humanity to both Vietnamese and International readers.',
+	'RBOOKS không ngừng thực hiện sứ mệnh cung cấp "thức ăn tinh thần" sách từ những giá trị được chắt lọc cho nhiều thế hệ ' => 'We continuously fulfill our mission of providingspiritual nourishment through books derivedfrom distilled values for many generations.',
 	'Định hướng phát triển doanh nghiệp' => 'Business Orientation',
 	'Phát hành sách Tiếng Việt và Tiếng Anh trên thị trường Việt Nam và Quốc Tế.' => 'Publish Vietnamese and English books on both Vietnamese and International markets.',
-	'Giá trị cốt lõi' => 'Core Value',
+	'Giá trị cốt lõi' => 'Core Value',    
 	'RBooks mong muốn mỗi một độc giả đều sẽ được trải qua 4 cung bậc cảm xúc khi đọc một cuốn sách mình yêu thích: Đọc, Hiểu, Cảm, Ngộ.' => 'Rbooks wishes to help each reader experience four levels of emotions when reading their favorite book: Reading, Understanding, Feeling, and Enlightenment.',
 
 	'Sách là sản phẩm có tính chất văn hóa và chứa đựng tư tưởng, trí tuệ của tác giả. RBooks tôn trọng Quyền tác giả, cam kết gửi đến độc giả những sách thật,100% sách có bản quyền.' => 'Books are cultural products that contain their authors\' thoughts and wisdom. RBooks respects copyright and commits to providing readers with authentic and 100% copyrighted books.',
 
-	'Cuộc sống luôn vận động. Tri thức luôn vận động. RBooks luôn lựa chọn những sách có giá trị, những sách có kiến thức ứng dụng thực tiễn. Sách của RBooks sẽ cùng “chạy” với độc giả trên con đường xây dựng đời sống tài chính lành mạnh nhất có thể.' => 'Life is constantly moving. Similarly, knowledge is always in motion. Therefore, Rbooks always chooses books with authentic value and practical knowledge for real-world applications. Our books will "run" with their readers on their journey to build and grow their financial lives as healthy as possible.',
+	'Cuộc sống luôn vận động. Tri thức luôn vận động. RBooks luôn lựa chọn những sách có giá trị, những sách có kiến thức ứng dụng thực tiễn.' => 'Life is dynamic, and knowledge needspractical application. RBooks always selects valuable books that offer practical knowledge.',
 
-	'Đích đến của R Books là: giàu tri thức, giàu tình cảm, giàu bản lĩnh và giàu cả về vật chất. Vì vậy, chú trọng phát triển dòng sách lĩnh vực Tài chính cá nhân chúng tôi mong muốn, mỗi độc giả sẽ tìm thấy con đường thịnh vượng cho chính mình.' => 'Our final destination is to make the readers rich in knowledge, emotion, aptitude, and material wealth. Therefore, by focusing on developing the sector of Personal Finance books, we hope that every reader will find their own path to prosperity.',
+	'Đích đến của RBooks là Tác giả cùng Độc giả ngày càng giàu tri thức, giàu tình cảm, giàu bản lĩnh và giàu cả về vật chất.' => 'RBooks\' goal is for both authors and readers to become enriched in knowledge, emotions, courage, and material wealth.',
 
 	'Niềm tin doanh nghiệp' => 'Company Belief',
 	'Một sản phẩm chất lượng là một sản phẩm mang lại giá trị thực sự cho người dùng.' => 'A quality product is a product that brings real value to its users.',

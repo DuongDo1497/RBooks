@@ -38,7 +38,7 @@
             <h4>Slogan</h4>
             <p>
               <img class="icon-ngoac" src="{{ 'imgs/icon_mo_ngoac.png' }}" alt="">
-              {{ trans('home.Nâng tầm tri thức') }}
+              {{ trans('home.Giá trị còn mãi') }}
               <img class="icon-ngoac" src="{{ 'imgs/icon_dong_ngoac.png' }}" alt="">
             </p>
           </div>
@@ -48,9 +48,9 @@
               <div class="content-slogan border-rl-2">
                 <div class="content-slogan__image"><img src="{{ 'imgs/icon_slogan.png' }}" alt=""></div>
                 <h4>Slogan</h4>
-                <p>{{ trans('home.Dựa trên điểm nhấn cuốn sách thể hiện ngọn lửa tri thức, ngọn lửa trí tuệ') }}</p>
+                <p>{{ trans('home.Dựa trên điểm nhấn cuốn sách thể hiện ngọn lửa tri thức, ngọn lửa trí tuệ.') }}</p>
                 <p>
-                  {{ trans('home.Logo RBooks thể hiện là một biểu tượng hạt giống tri thức đang nảy mầm mang đến niềm tin, kiến thức và cơ hội thay đổi cuộc đời cho mỗi độc giả Việt Nam.') }}
+                  {{ trans('home.Logo RBooks thể hiện là một biểu tượng hạt giống tri thức đang nảy mầm mang đến niềm tin, kiến thức và cơ hội thay đổi cuộc đời của Tác giả và Độc giả.') }}
                 </p>
               </div>
             </div>
@@ -60,7 +60,7 @@
                 <div class="content-slogan__image"><i class="fa-solid fa-eye"></i></div>
                 <!-- <div class="content-slogan__image"><img src="{{ 'imgs/icon_tam_nhin.png' }}" alt=""></div> -->
                 <h4>{{ trans('home.Tầm nhìn') }}</h4>
-                <p>{{ trans('home.Trở thành công ty sách dẫn đầu về lĩnh vực Tài chính cá nhân tại Việt Nam.') }}</p>
+                <p>{{ trans('home.Trở thành công ty sách dẫn đầu tại Châu Á về việc đưa sách các Tác giả thành sách Best Seller trên thị trường quốc tế.') }}</p>
               </div>
             </div>
 
@@ -70,7 +70,7 @@
                 <div class="content-slogan__image"><i class="fa-solid fa-fire"></i></div>
                 <h4 class="mh-70">{{ trans('home.Sứ mệnh') }}</h4>
                 <p>
-                  {{ trans('home.RBooks mang hạt giống tri thức, trí tuệ của nhân loại đến độc giả Việt Nam và Quốc Tế.') }}
+                  {{ trans('home.RBOOKS không ngừng thực hiện sứ mệnh cung cấp "thức ăn tinh thần" sách từ những giá trị được chắt lọc cho nhiều thế hệ') }}
                 </p>
 
               </div>
@@ -97,10 +97,10 @@
                   {{ trans('home.Sách là sản phẩm có tính chất văn hóa và chứa đựng tư tưởng, trí tuệ của tác giả. RBooks tôn trọng Quyền tác giả, cam kết gửi đến độc giả những sách thật, 100% sách có bản quyền.') }}
                 </p>
                 <p><span class="fw-bold">Run (Ứng dụng)</span>:
-                  {{ trans('home.Cuộc sống luôn vận động. Tri thức luôn vận động. RBooks luôn lựa chọn những sách có giá trị, những sách có kiến thức ứng dụng thực tiễn. Sách của RBooks sẽ cùng “chạy” với độc giả trên con đường xây dựng đời sống tài chính lành mạnh nhất có thể.') }}
+                  {{ trans('home.Cuộc sống luôn vận động. Tri thức luôn vận động. RBooks luôn lựa chọn những sách có giá trị, những sách có kiến thức ứng dụng thực tiễn.') }}
                 </p>
                 <p><span class="fw-bold">Rich (Thịnh vượng)</span>:
-                  {{ trans('home.Đích đến của R Books là: giàu tri thức, giàu tình cảm, giàu bản lĩnh và giàu cả về vật chất. Vì vậy, chú trọng phát triển dòng sách lĩnh vực Tài chính cá nhân chúng tôi mong muốn, mỗi độc giả sẽ tìm thấy con đường thịnh vượng cho chính mình.') }}
+                  {{ trans('home.Đích đến của RBooks là Tác giả cùng Độc giả ngày càng giàu tri thức, giàu tình cảm, giàu bản lĩnh và giàu cả về vật chất.') }}
                 </p>
 
               </div>
