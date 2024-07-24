@@ -46,7 +46,7 @@ return [
 	'Giá trị cốt lõi' => 'Core Value',    
 	'RBooks mong muốn mỗi một độc giả đều sẽ được trải qua 4 cung bậc cảm xúc khi đọc một cuốn sách mình yêu thích: Đọc, Hiểu, Cảm, Ngộ.' => 'Rbooks wishes to help each reader experience four levels of emotions when reading their favorite book: Reading, Understanding, Feeling, and Enlightenment.',
 
-	'Sách là sản phẩm có tính chất văn hóa và chứa đựng tư tưởng, trí tuệ của tác giả. RBooks tôn trọng Quyền tác giả, cam kết gửi đến độc giả những sách thật,100% sách có bản quyền.' => 'Books are cultural products that contain their authors\' thoughts and wisdom. RBooks respects copyright and commits to providing readers with authentic and 100% copyrighted books.',
+	'Sách là sản phẩm có tính chất văn hóa và chứa đựng tư tưởng, trí tuệ của tác giả. RBooks tôn trọng Quyền tác giả, cam kết gửi đến độc giả những sách thật, 100% sách có bản quyền.' => 'Books are cultural products that contain their authors\' thoughts and wisdom. RBooks respects copyright and commits to providing readers with authentic and 100% copyrighted books.',
 
 	'Cuộc sống luôn vận động. Tri thức luôn vận động. RBooks luôn lựa chọn những sách có giá trị, những sách có kiến thức ứng dụng thực tiễn.' => 'Life is dynamic, and knowledge needspractical application. RBooks always selects valuable books that offer practical knowledge.',
 
