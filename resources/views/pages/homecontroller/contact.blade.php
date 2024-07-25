@@ -45,7 +45,7 @@
       </div>
       <div class="map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.208197038117!2d106.7178658152839!3d10.79536026179469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f47d6e2bbb5%3A0x7b0dd05c1807cfe5!2sR%20Books%20Co.%2C%20Ltd!5e0!3m2!1sen!2s!4v1593743399473!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2346918063818!2d106.71941042591331!3d10.79332870887995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a98f124785%3A0x61f3bc81b7ef4017!2zVmluaG9tZXMgVMOibiBD4bqjbmcsIFBoxrDhu51uZyAyMiwgQsOsbmggVGjhuqFuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1721899095057!5m2!1svi!2s"
           width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
           tabindex="0"></iframe>
       </div>
