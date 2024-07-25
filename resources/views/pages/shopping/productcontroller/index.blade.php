@@ -7,7 +7,7 @@
         <div class="product-detail-wrap">
           <div class="product-detail-service">
             <div class="row">
-              <div class="col-xxl-4">
+              <div class="col-lg-5 col-xxl-4">
                 <div class="gallery-image">
                   <div class="gallery-big-image">
                     <img id="img-active"
@@ -26,7 +26,7 @@
                 </div>
               </div>
 
-              <div class="col-xxl-8">
+              <div class="col-lg-7 col-xxl-8">
                 <div class="product-detail-control">
                   <h4 class="title">
                     {{ $product->name }}
