@@ -239,6 +239,7 @@ return [
 	'Tiết kiệm' => 'Saved',
 	'Tiếp tục mua hàng' => 'Continue shopping',
 	'Thanh toán' => 'Payment',
+	'Yêu cầu phải đăng nhập' => 'Login required',
 	'' => '',
 	// Cart
 

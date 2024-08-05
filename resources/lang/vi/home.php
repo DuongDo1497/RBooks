@@ -229,6 +229,7 @@ return [
 	'Tiết kiệm' => 'Tiết kiệm',
 	'Tiếp tục mua hàng' => 'Tiếp tục mua hàng',
 	'Thanh toán' => 'Thanh toán',
+	'Yêu cầu phải đăng nhập' => 'Yêu cầu phải đăng nhập',
 	// Cart
 
 	// Shipping method
