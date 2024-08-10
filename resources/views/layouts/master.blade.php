@@ -64,7 +64,7 @@
                 placeholder="{{ trans('home.Nhập ISBN, tiêu đề hoặc tác giả') }}" name = "keyword">
               <button class="btn btn-outline-secondary" type="submit">
                 {{-- <i class="fas fa-search"></i> --}}
-                <img class="img-fluid" src="{{ 'imgs/icon-search.svg' }}" alt="">
+                <img class="img-fluid" src="https://rbooks.vn/imgs/icon-search.svg" alt="">
               </button>
             </div>
           </form>

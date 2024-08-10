@@ -297,6 +297,20 @@ h5 {
   text-align: center;
 }
 
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .header .header-search {
+    max-width: 35rem;
+  }
+
+  .header-search button {
+    padding: 0.9rem 2rem;
+  }
+
+  .header-control .text {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 575.98px) {
   .header .header-main {
     gap: 2rem;
