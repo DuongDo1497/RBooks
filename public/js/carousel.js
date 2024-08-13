@@ -57,7 +57,7 @@ $(function () {
         items: 2,
         margin: 20,
       },
-      1200: {
+      992: {
         items: 3,
         margin: 37,
       },
@@ -82,7 +82,7 @@ $(function () {
         items: 3,
         margin: 37,
       },
-      1200: {
+      992: {
         items: 3,
         margin: 37,
       },
@@ -107,7 +107,11 @@ $(function () {
         items: 2,
         margin: 25,
       },
-      1200: {
+      992: {
+        items: 3,
+        margin: 25,
+      },
+      1400: {
         items: 6,
         margin: 25,
       },
