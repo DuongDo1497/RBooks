@@ -190,7 +190,7 @@
   flex-shrink: 0;
 }
 
-/* @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .contact-us {
     flex-direction: column;
   }
@@ -203,4 +203,4 @@
   .form-contact-us {
     margin: 0;
   }
-} */
+}

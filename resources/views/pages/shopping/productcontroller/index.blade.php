@@ -359,12 +359,16 @@
                           @endif
                         </div>
                       </div>
-                      @if (Auth::check() && !empty(count($checkorders)))
+                      {{-- @if (Auth::check() && !empty(count($checkorders)))
                         <button type="button" class="btn btn-primary btn-add" data-bs-toggle="modal"
                           data-bs-target="#modalComment">
                           {{ trans('home.Viết nhận xét') }}
                         </button>
-                      @endif
+                      @endif --}}
+                      <button type="button" class="btn btn-primary btn-add" data-bs-toggle="modal"
+                          data-bs-target="#modalComment">
+                          {{ trans('home.Viết nhận xét') }}
+                        </button>
                       @include('pages.shopping.productcontroller.addcomment')
                     </div>
                     <div class="item">

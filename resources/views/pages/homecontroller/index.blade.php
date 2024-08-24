@@ -89,19 +89,19 @@
         <div class="brand-intro">
           <div class="item">
             <a href="#">
-              <img class="img-fluid avatar" src="{{ asset('imgs/BANNER-SACH-KINH-DOANH.png') }}" alt="">
+              <img class="img-fluid avatar" src="{{ asset('imgs/01.png') }}" alt="">
             </a>
           </div>
 
           <div class="item">
             <a href="#">
-              <img class="img-fluid avatar" src="{{ asset('imgs/BANNER-SACH-CHUA-LANH.png') }}" alt="">
+              <img class="img-fluid avatar" src="{{ asset('imgs/02.png') }}" alt="">
             </a>
           </div>
 
           <div class="item">
             <a href="#">
-              <img class="img-fluid avatar" src="{{ asset('imgs/BANNER-SACH-BAN-LINH.png') }}" alt="">
+              <img class="img-fluid avatar" src="{{ asset('imgs/03.png') }}" alt="">
             </a>
           </div>
         </div>
@@ -220,7 +220,7 @@
                                                   <a href="{{ route('product.index', ['id' => $productOneSale->id, 'alias' => $productOneSale->slug]) }}" class="btn btn-primary">Xem chi tiết</a>
                                               </div> -->
                 <img class="img-fluid" src="{{ asset('imgs/promotion-hot.jpg') }}" alt="">
-                <a href="{{ route('product.index', ['id' => '97', 'alias' => 'combo-nguoi-tre-voi-co-don-toi-da-yeu-nguoi-am-tham-nhu-the-dung-vi-co-don-ma-nam-voi-mot-ban-tay']) }}"
+                <a href="{{ route('product.index', ['id' => '20', 'alias' => 'bo-sach-lap-ke-hoach-de-co-mot-doi-song-tron-ven-song-co-ke-hoach-chet-co-ke-hoach']) }}"
                   class="btn btn-primary btn-readmore">
                   <span class="text">{{ trans('home.Xem chi tiết') }}</span>
                   <span class="icon">

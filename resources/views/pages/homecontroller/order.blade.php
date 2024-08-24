@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-lg-12 pdf">
           <iframe frameborder="0"
-            src="https://bossstack-my.sharepoint.com/:b:/g/personal/duongdo_bossstack_vn/EZRFQ_dOf0ZLqa-TbziLrDkBm-zMjmBGonmOvp9fi6Kpwg?e=VL3cBe"
+            src="https://drive.google.com/file/d/14EZ4zxL196P2TI3SMNjCiL1I9I32s3uv/preview"
             width="80%" height="800"></iframe>
         </div>
       </div>

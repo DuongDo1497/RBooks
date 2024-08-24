@@ -212,7 +212,7 @@
   }
 }
 
-/* @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .section-about-Rbooks {
     margin-top: 0;
   }
@@ -257,4 +257,4 @@
   .about-content-slogan .content-slogan {
     padding: 3rem 2.5rem;
   }
-} */
+}

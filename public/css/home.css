@@ -51,12 +51,12 @@
   padding: 3.6rem 4rem;
 }
 
-@media (min-width: 768px) and (max-width: 1399.98px) {
+/* @media (min-width: 768px) and (max-width: 1399.98px) {
   .header-logo,
   .footerTop-logo {
     max-width: 14rem;
   }
-}
+} */
 
 /* END DEFAULT */
 
@@ -1622,7 +1622,7 @@
   margin-top: 2rem;
 }
 
-/* @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .header-logo {
     max-width: 10rem;
   }
@@ -1757,4 +1757,4 @@
   .section-books-topic .product-carousel .card-body {
     padding: 3.6rem 2rem;
   }
-} */
+}
