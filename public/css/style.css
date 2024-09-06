@@ -654,6 +654,13 @@ h5 {
   }
 } */
 
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .footerTop-main {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .footerTop-main {
     flex-wrap: wrap;
